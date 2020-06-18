@@ -1,0 +1,38 @@
+.btn {
+  @include pxRem(line-height, 26);
+  @include pxRem(font-size, 16);
+  @include pxRem(letter-spacing, 2);
+  @include pxRem(margin-left, 6);
+  @include pxRem(font-size, 14 !important);
+  display: inline-block;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: inherit;
+  overflow: hidden;
+  cursor: pointer;
+}
+.btn-md {
+  @include pxRem(margin-top, 16);
+  @include pxRem(padding, 10 40 10);
+}
+.btn-light {
+  background: transparent;
+  border: 2px solid $white;
+  color: $white;
+  &:hover {
+    background-color: $white;
+    color: $primary;
+    transition: 0.5s;
+  }
+}
+.btn-secondary {
+  background-color: $secondary;
+  color: #002147 !important;
+  border: 2px solid $secondary;
+  &:hover {
+    background: $hover-secondary;
+    border: 2px solid $hover-secondary;
+    color: $white !important;
+    transition: 0.5s;
+  }
+}
