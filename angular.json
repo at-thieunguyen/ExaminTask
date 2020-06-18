@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Examin"
+    }
+  },
+  "defaultProject": "Examin",
+  "cli": {
+    "analytics": "aaa100db-b655-4827-8f9f-48cc84f2e76b"
+  }
 }

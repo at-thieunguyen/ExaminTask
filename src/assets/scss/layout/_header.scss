@@ -1,0 +1,84 @@
+.bg-dark {
+  background-color: $primary;
+}
+.top-navbar {
+  @include pxRem(padding, 11 0);
+  .user-login {
+    @include pxRem(margin, 3 0);
+    display: flex;
+    justify-content: flex-end;
+    a {
+      @include pxRem(margin-left, 8);
+      @include pxRem(padding, 8 25);
+      @include pxRem(border-radius, 5);
+      background: $secondary none repeat scroll 0 0;
+      color: $primary;
+      display: inline-block;
+      font-weight: 600;
+      text-decoration: none;
+      i {
+        @include pxRem(padding, 4);
+      }
+    }
+  }
+  .box-contact {
+    display: flex;
+    .box-contact-item {
+      @include pxRem(margin-right, 18);
+      @include pxRem(padding-right, 20);
+      @include pxRem(line-height, 24);
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+      font-family: "Poppins", sans-serif;
+      color: $white;
+      span {
+        display: block;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      &:last-child {
+        border: medium none;
+        margin: 0;
+      }
+    }
+    i {
+      @include pxRem(margin-right, 6);
+    }
+  }
+}
+
+
+.navbar-general {
+  display: flex;
+  justify-content: space-between;
+  .navbar-header {
+    @include pxRem(padding, 18 15);
+    @include pxRem(margin-left, -15);
+  }
+  .collapse {
+    .navbar-item {
+      @include pxRem(padding, 30 15);
+      @include pxRem(font-size, 12);
+      display: flex;
+      justify-content: flex-end;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    li {
+      // @include pxRem(margin-right, 10px);
+    }
+    .navbar-link {
+      @include pxRem(padding, 36 11);
+      font-size: 13.2px !important;
+      color: #333333;
+      &::after {
+        @include pxRem(margin-left, 6);
+        @include pxRem(margin-top, 3);
+        content: "\f107";
+        font-family: "Font Awesome 5 Free";
+      }
+    }
+    .navbar-collapse {
+    }
+  }
+}

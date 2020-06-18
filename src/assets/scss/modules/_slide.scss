@@ -1,0 +1,15 @@
+.slide-set-m {
+  .carousel-slide {
+    position: relative;
+    width: 100%;
+    .content-box-cell {
+      position: absolute;
+      top: 50%;
+    }
+  }
+  .banner {
+    width: 100%;
+  }
+}
+
+
