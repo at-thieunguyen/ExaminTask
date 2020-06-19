@@ -1,0 +1,75 @@
+.about-area {
+  @include pxRem(padding-top, 80);
+  @include pxRem(padding-bottom, 80);
+  .info {
+    h5 {
+      @include pxRem(font-size, 18);
+      @include pxRem(margin-bottom, 12);
+      color: $grey;
+      text-transform: uppercase;
+      font-weight: normal;
+    }
+    h3 {
+      @include pxRem(margin-bottom, 25);
+      @include pxRem(padding-bottom, 25);
+      &::before {
+        @include pxRem(width, 25);
+        @include pxRem(height, 25);
+        background: #ffb606;
+        bottom: 0;
+        content: "";
+        left: 0;
+        &::after {
+          @include pxRem(width, 40);
+          @include pxRem(height, 2px);
+          background: #ffb606;
+          bottom: 0;
+          left: 0;
+          content: "";
+        }
+      }
+    }
+    p {
+      @include pxRem(margin, 0 0 15);
+      color: $grey;
+    }
+  }
+  .separator {
+    .border {
+      border-bottom: 1px solid rgba(20, 23, 28, 0.1);
+      margin-bottom: 50px;
+      padding-bottom: 50px;
+      overflow: hidden;
+      float: left;
+      width: 100%;
+    }
+  }
+  .our-features {
+    .item-feature {
+      display: flex;
+      justify-content: flex-start;
+      .img-shield {
+        @include pxRem(padding-right, 15px);
+      }
+      .info-feature {
+        @include pxRem(padding, 10 0px);
+        h6,
+        a {
+          text-transform: uppercase;
+        }
+        a {
+          @include pxRem(font-size, 12 !important);
+          color: $grey;
+        }
+      }
+    }
+    .flaticon-faculty-shield {
+      width: 80px;
+    }
+    .item-mariner {
+      @include pxRem(padding, 50 30);
+      box-shadow: 0 0 10px #cccccc;
+    }
+  }
+}
+

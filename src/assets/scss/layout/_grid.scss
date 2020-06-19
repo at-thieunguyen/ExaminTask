@@ -23,6 +23,13 @@ $container-width: 1170px;
   margin: 0 auto;
   max-width: $container-width;
 }
+.container-fluid {
+  @extend %clr;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 auto;
+  max-width: 100%;
+}
 .row {
   // @extend %clr;
   margin-left: -$grid-gutter;
