@@ -8,6 +8,16 @@ import { SlideComponent } from './slide/slide.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { AboutComponent } from './about/about.component';
 import { WhychooseusComponent } from './whychooseus/whychooseus.component';
+import { SlideenrollComponent } from './slideenroll/slideenroll.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { FooterComponent } from './footer/footer.component';
+import { PopularCoursesComponent } from './popular-courses/popular-courses.component';
+import { TopcategoriesComponent } from './topcategories/topcategories.component';
+import { ExperienceAdvisorsComponent } from './experience-advisors/experience-advisors.component';
+import { FunFactorComponent } from './fun-factor/fun-factor.component';
+import { EventComponent } from './event/event.component';
+import { RegisterComponent } from './register/register.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 @NgModule({
   declarations: [
@@ -15,13 +25,22 @@ import { WhychooseusComponent } from './whychooseus/whychooseus.component';
     HeaderComponent,
     SlideComponent,
     AboutComponent,
-    WhychooseusComponent
+    WhychooseusComponent,
+    SlideenrollComponent,
+    FooterComponent,
+    PopularCoursesComponent,
+    TopcategoriesComponent,
+    ExperienceAdvisorsComponent,
+    FunFactorComponent,
+    EventComponent,
+    RegisterComponent,
+    TestimonialsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CarouselModule
-
+    CarouselModule,
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,79 @@
+.wcu-area {
+  @include pxRem(padding-bottom, 80px);
+  .flaticon-trending {
+    @include pxRem(width, 80);
+    @include pxRem(padding, 10);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .bg-cover {
+    @include pxRem(height, 774);
+    background-image: url("/assets/images/banner2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .content {
+    @include pxRem(padding, 80);
+    background-color: $primary;
+  }
+  .site-heading {
+    @include pxRem(margin-bottom, 20);
+    h2 {
+      @include pxRem(margin-bottom, 30);
+      @include pxRem(padding-bottom, 20);
+      color: $white;
+      font-weight: 600;
+      position: relative;
+      text-transform: uppercase;
+      z-index: 1;
+      &::before {
+        @include pxRem(height, 2);
+        @include pxRem(width, 40);
+        @include pxRem(margin-left, -40);
+        background: $secondary;
+        bottom: 0;
+        left: 50%;
+        content: "";
+        position: absolute;
+        z-index: 1;
+      }
+      &::after {
+        @include pxRem(height, 2);
+        @include pxRem(width, 20);
+        @include pxRem(margin-left, -40);
+        background: $secondary;
+        bottom: 0;
+        left: 50%;
+        content: "";
+        position: absolute;
+        z-index: 1;
+      }
+    }
+    p {
+      color: $text-grey-secondary;
+    }
+  }
+  .item-wcu {
+    @include pxRem(margin-bottom, 30);
+    @include pxRem(padding-bottom, 30);
+    display: flex;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+    &:last-child {
+      border: medium none;
+      margin: 0;
+      padding: 0;
+    }
+    .info {
+      @include pxRem(padding-left, 20);
+      h5 {
+        a {
+          color: $white;
+        }
+      }
+      p {
+        color: $text-grey-secondary;
+      }
+    }
+  }
+}
