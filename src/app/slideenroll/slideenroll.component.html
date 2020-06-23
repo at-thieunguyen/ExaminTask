@@ -4,14 +4,23 @@
       <div class="slide slide-enroll-item">
         <div class="row">
           <div class="col-5">
-            <img src="{{slide.img}}" alt="">
+            <div class="thumb">
+              <img class="img-enroll" src="{{slide.img}}" alt="">
+              <div class="live-view">
+                <a class="view-camera" href=""><i class="fa fa-camera"></i></a>
+                <a class="view-video" href=""><i class="fa fa-video"></i></a>
+              </div>
+            </div>
+
           </div>
           <div class="col-7 info">
             <h2><a href="#">{{slide.title}}</a></h2>
-            <h4>featured courses</h4>
+            <h5>featured courses</h5>
             <p>
+
               Both rest of know draw fond post as. It agreement defective to excellent. Feebly do engage of narrow.
-              Extensive repulsive belonging depending if promotion be zealously as. Preference inquietude ask
+              Extensive repulsive belonging depending if promotion be zealously as. Preference inquietude ask.
+
             </p>
             <h3>Learning outcomes</h3>
             <ul>
@@ -46,6 +55,4 @@
       </div>
     </section>
   </ngx-slick-carousel>
-  <button (click)="slickModal.slickGoTo(2)">slickGoto 2</button>
-  <button (click)="slickModal.slickGoTo(1)">slickGoto 1</button>
 </div>

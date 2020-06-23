@@ -39,12 +39,12 @@ export class PopularCoursesComponent implements OnInit {
     },
   ];
   slideConfig = {
-    'slidesToShow': 4,
+    'slidesToShow': 3,
     'slidesToScroll': 1,
     'dots': true,
     'infinite': true,
-    'autoplay': true,
-    'autoplaySpeed': 1500
+    'autoplay': false,
+    // 'autoplaySpeed': 10000,
   };
 
   slickInit(e) {

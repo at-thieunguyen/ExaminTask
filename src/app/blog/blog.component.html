@@ -1,0 +1,66 @@
+<section class="blog-area">
+  <div class="container">
+    <div class="row">
+      <div class="site-heading">
+        <div class="col-8">
+          <h2>Latest News</h2>
+          <p>
+            Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions
+            education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along
+            on happy could cease green oh.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row" *ngFor="let blog of blogs">
+      <div class="col-4">
+        <div class="item">
+          <div class="thumb">
+            <a href=""><img src="{{blog.img}}" alt=""></a>
+            <div class="date">
+              <h4><span>24</span> Nov, 2018</h4>
+            </div>
+          </div>
+          <div class="info">
+            <h5><a href="">{{blog.title}}</a></h5>
+            <p>
+              Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness
+              something the partiality unaffected
+            </p>
+            <a href="#">Read more <i class="fas fa-angle-double-right"></i></a>
+            <div class="meta">
+              <ul>
+                <li><a href=""><i class="fas fa-user"></i></a>author</li>
+                <li><a href=""><i class="fas fa-comments"></i></a>23 Comments</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="client-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-4 info">
+        <h4>Our largest education campus</h4>
+        <p>
+          Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham
+          melancholy son themselves.
+        </p>
+      </div>
+      <div class="col-8">
+        <div class="client-logo-carousel">
+          <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+            <div class="client-item" ngxSlickItem *ngFor="let logoCarousel of clientLogoCarousel">
+              <div class="single-item">
+                <a href="#"><img src="{{logoCarousel.img}}" alt=""></a>
+              </div>
+            </div>
+          </ngx-slick-carousel>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

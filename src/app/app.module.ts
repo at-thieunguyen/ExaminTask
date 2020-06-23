@@ -18,6 +18,7 @@ import { FunFactorComponent } from './fun-factor/fun-factor.component';
 import { EventComponent } from './event/event.component';
 import { RegisterComponent } from './register/register.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
     FunFactorComponent,
     EventComponent,
     RegisterComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
