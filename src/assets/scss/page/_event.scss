@@ -7,8 +7,8 @@
     }
   }
   .vetical-all {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    @include pxRem(padding-bottom, 20);
+    @include pxRem(padding-top, 20);
     .vetical-item {
       @include pxRem(padding-bottom, 20);
       .item {

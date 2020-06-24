@@ -3,8 +3,8 @@
 }
 .top-cat-item {
   .item {
+    @include pxRem(border-radius, 5);
     background-size: cover;
-    border-radius: 5px;
     &:hover {
       a,
       h4,
@@ -13,29 +13,29 @@
       }
     }
     a {
+      @include pxRem(padding, 50 30);
+      @include pxRem(border-radius, 5);
       box-shadow: 0 0 10px #cccccc;
       display: flex;
-      padding: 50px 30px;
       position: relative;
       z-index: 1;
       background: #ffffff;
-      border-radius: 5px;
       cursor: pointer;
       &:hover {
         background: transparent;
         transition: 0.5s;
       }
       img {
-        width: 50px;
-        height: 50px;
+        @include pxRem(width, 50);
+        @include pxRem(height, 50);
       }
       .info {
         @include pxRem(padding-left, 15);
       }
     }
     h4 {
+      @include pxRem(bottom, 10);
       font-weight: 600;
-      margin-bottom: 10px;
       text-transform: capitalize;
     }
   }
