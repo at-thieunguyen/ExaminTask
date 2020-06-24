@@ -32,7 +32,7 @@ $container-width: 1170px;
   overflow: hidden;
 }
 .row {
-  // @extend %clr;
+  @extend %clr;
   margin-left: -$grid-gutter;
   margin-right: -$grid-gutter;
   > [class*="col-"] {
