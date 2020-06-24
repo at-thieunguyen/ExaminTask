@@ -25,10 +25,10 @@
       p {
         @include pxRem(line-height, 26);
         @include pxRem(margin, 15 0);
+        @include pxRem(font-size, 15);
         color: $grey;
         text-transform: none;
         font-weight: 400;
-        font-size: 15px;
       }
     }
     .thumb {

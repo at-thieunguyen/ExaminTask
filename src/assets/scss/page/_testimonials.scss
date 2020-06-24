@@ -1,0 +1,33 @@
+.testimonial-area {
+  h2, p {
+    color: $white;
+  }
+}
+.item {
+  .item-img {
+    width: 100%;
+  }
+}
+.student-review {
+  margin: 0 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  .student-img {
+    border-radius: 5px;
+  }
+  .student-text {
+    color: $white;
+    .student-name {
+      @include pxRem(font-size, 18);
+      color: $white;
+    }
+    .student-job {
+      color: $secondary;
+    }
+  }
+}
+.slick-track {
+  @include pxRem(padding-bottom, 80);
+}

@@ -1,0 +1,30 @@
+.fun-factor-area {
+  @include pxRem(padding-top, 80);
+  @include pxRem(padding-bottom, 80);
+}
+.fun-fact {
+  @include pxRem(padding, 30 20);
+  border: 1px solid $white;
+  text-align: center;
+  .icon {
+    img {
+      @include pxRem(width, 50);
+    }
+  }
+  .info {
+    .timer {
+      @include pxRem(font-size, 40);
+      @include pxRem(margin-bottom, 5);
+      color: #ffffff;
+      font-weight: 900;
+      line-height: 1.2;
+      display: block;
+    }
+    .medium {
+      @include pxRem(font-size, 18);
+      color: #ffffff;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+  }
+}

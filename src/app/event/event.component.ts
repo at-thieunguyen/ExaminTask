@@ -19,6 +19,6 @@ export class EventComponent implements OnInit {
     {
       img: './assets/images/event3.jpg',
       title: 'Actualized Leadership Network Seminar'
-    }
+    },
   ]
 }

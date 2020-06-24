@@ -1,39 +1,34 @@
-<section class="testimonial-area">
+<section class="testimonial-area bg-dark">
   <div class="container">
     <div class="row">
       <div class="site-heading">
-        <div class="col-8">
-          <h2>Students Review</h2>
-          <p>Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions
+        <div class="col-12">
+          <h2 class="student-title register-title">Students Review</h2>
+          <p class="student-intro">Able an hope of body. Any nay shyness article matters own removal nothing his
+            forming. Gay own additions
             education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along
             on happy could cease green oh.</p>
         </div>
       </div>
     </div>
-    <div class="row">
-      <ngx-slick-carousel class="carousel" #slickModal="slick-carousel">
-        <div class="col-12" ngxSlickItem *ngFor="let slide of slides">
-          <div class="client-review-carousel">
-            <div class="slide-client-review">
-              <div class="client-review">
-                <div class="item">
-                  <div class="col-5">
-                    <img src="{{slide.img}}" alt="">
-                  </div>
-                  <div class="col-7 info">
-                    <p>
-                      Procuring continued suspicion its ten. Pursuit brother are had fifteen distant has. Early had add
-                      equal china quiet visit. Appear an manner as no limits either praise..
-                    </p>
-                    <h4>{{slide.name}}</h4>
-                    <span>{{slide.position}}</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+      <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+        <!-- <div class="row">
+          <div class="col-12"> -->
+        <div class="row student-review">
+          <div class="col-5 student-img">
+            <img class="student-img" src="{{ slide.img }}" alt="" width="100%">
+          </div>
+          <div class="col-7 student-text">
+            <p class="student-text-top">
+              Procuring continued suspicion its ten. Pursuit brother are had fifteen distant has. Early had add equal
+              china quiet visit. Appear an manner as no limits either praise..
+            </p>
+            <h4 class="student-name">Ronaldo CR7</h4>
+            <p class="student-job">Development Student</p>
           </div>
         </div>
-      </ngx-slick-carousel>
-    </div>
+      </div>
+    </ngx-slick-carousel>
   </div>
 </section>
