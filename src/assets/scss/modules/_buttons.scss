@@ -16,6 +16,20 @@
   @include pxRem(margin-top, 16);
   @include pxRem(padding, 10 40 10);
 }
+.btn-sm {
+  @include pxRem(margin-top, 16);
+  @include pxRem(padding, 7 32);
+  @include pxRem(font-size, 12 !important)
+}
+.btn-grey {
+  background-color: $gray;
+  border: 2px solid #e7e7e7;
+  color: $primary;
+  &:hover {
+    background-color: $white;
+    transition: 0.5s;
+  }
+}
 .btn-light {
   background: transparent;
   border: 2px solid $white;
@@ -44,6 +58,16 @@
   &:hover {
     color: $white;
     background-color: $primary;
+    transition: 0.5s;
+  }
+}
+.btn-dark {
+  background-color: $primary;
+  color: $white;
+  border: 2px solid $primary;
+  &:hover {
+    color: $primary;
+    background-color: $white;
     transition: 0.5s;
   }
 }

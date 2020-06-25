@@ -1,4 +1,5 @@
 .blog-area {
+  @include pxRem(padding-bottom, 80);
   .thumb {
     position: relative;
     z-index: 1;
@@ -86,4 +87,8 @@
       }
     }
   }
+}
+.client-area {
+  @include pxRem(padding-top, 80);
+  background-color: #f9f9f9;
 }

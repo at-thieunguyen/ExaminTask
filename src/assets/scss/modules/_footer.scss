@@ -1,6 +1,12 @@
 .footer {
   @include pxRem(padding-top, 80);
   color: $white;
+  .text-footer {
+    @include pxRem(margin-bottom, 15);
+  }
+  .text-italic {
+    font-style: italic;
+  }
   a {
     color: $white;
   }
