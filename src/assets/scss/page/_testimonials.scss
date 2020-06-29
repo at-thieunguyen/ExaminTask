@@ -18,6 +18,7 @@
     @include pxRem(border-radius, 5);
   }
   .student-text {
+    @include pxRem(padding-left, 10);
     color: $white;
     .student-name {
       @include pxRem(font-size, 18);

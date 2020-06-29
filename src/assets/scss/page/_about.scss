@@ -68,8 +68,13 @@
     }
     .item-mariner {
       @include pxRem(padding, 50 30);
+      @include pxRem(margin-bottom, 15);
       box-shadow: 0 0 10px #cccccc;
+      display: flex;
+      justify-content: center;
     }
   }
 }
-
+.img-about {
+  max-width: 100%;
+}

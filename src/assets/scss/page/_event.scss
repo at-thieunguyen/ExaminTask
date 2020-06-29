@@ -1,8 +1,10 @@
 .event-area {
   @include pxRem(padding-bottom, 80);
-  .event-item {
-    position: relative;
-    z-index: 1;
+  .event-all {
+    .item {
+      position: relative;
+      z-index: 1;
+    }
     .event-info,.info {
       @include pxRem(padding, 30);
       ul {
@@ -44,8 +46,8 @@
     }
   }
   .date {
-    @include pxRem(bottom, 15);
-    @include pxRem(left, 15);
+    @include pxRem(top, 15);
+    @include pxRem(right, 15);
     @include pxRem(padding, 15);
     position: absolute;
     z-index: 1;

@@ -1,21 +1,19 @@
 .wcu-area {
-  @include pxRem(padding-bottom, 80px);
+  @include pxRem(max-height, 774);
   .flaticon-trending {
     @include pxRem(width, 80);
     @include pxRem(padding, 10);
     border: 1px solid rgba(255, 255, 255, 0.2);
   }
-  .bg-cover {
+  .img-wcu-cover {
     @include pxRem(height, 774);
     background-image: url("/assets/images/banner2.jpg");
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
     position: relative;
   }
   .content {
-    @include pxRem(padding, 80);
-    background-color: $primary;
+    @include pxRem(padding, 80 15);
   }
   .site-heading-wcu {
     @include pxRem(margin-bottom, 20);
@@ -33,7 +31,7 @@
         @include pxRem(margin-left, -40);
         background: $secondary;
         bottom: 0;
-        left: 50%;
+        left: 5%;
         content: "";
         position: absolute;
         z-index: 1;
@@ -42,9 +40,9 @@
         @include pxRem(height, 2);
         @include pxRem(width, 20);
         @include pxRem(margin-left, -40);
+        @include pxRem(left, 86);
         background: $secondary;
         bottom: 0;
-        left: 50%;
         content: "";
         position: absolute;
         z-index: 1;
@@ -75,5 +73,10 @@
         color: $text-grey-secondary;
       }
     }
+  }
+}
+@include respond-below(largest) {
+  .wcu-area {
+    max-height: 100%;
   }
 }

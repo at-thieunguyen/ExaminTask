@@ -56,6 +56,13 @@ $container-width: 1170px;
  * Ex: col-1, col-2 */
 @include build-grid('');
 
+/* Grid for screen min-width: $largest
+ * Ex: col-largest-1, col-largest-2 */
+ @include respond-above(smallest) {
+  @include build-grid(smallest);
+}
+
+
 /* Grid for screen min-width: $small
  * Ex: col-small-1, col-small-2 */
 @include respond-above(small) {

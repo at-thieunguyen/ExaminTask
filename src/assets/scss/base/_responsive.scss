@@ -1,0 +1,84 @@
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .register-area {
+    .img-register {
+      text-align: center;
+    }
+  }
+  html {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+}
+.top-categoris {
+  .top-categories-info {
+    display: flex;
+    justify-content: center;
+  }
+}
+.client-area {
+  .info {
+    text-align: center;
+  }
+}
+.footer-bottom,
+.img-register,
+.student-text {
+  text-align: center;
+}
+.top-navbar {
+    
+  }
+html {
+  font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .fun-factor-area {
+    .fun-fact {
+      margin-bottom: 20px;
+    }
+  }
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .fun-factor-area {
+    .fun-fact {
+      margin-bottom: 20px;
+    }
+  }
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}

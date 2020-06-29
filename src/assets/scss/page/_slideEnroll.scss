@@ -1,4 +1,5 @@
 .slide-enroll {
+  @include pxRem(padding-top, 80);
   @include pxRem(padding-bottom, 80);
   &:focus {
     outline: none;

@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="site-heading">
-        <div class="col-12">
+        <div class="col-large-12">
           <h2>Latest News</h2>
           <p>
             Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions
@@ -13,7 +13,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-4" *ngFor="let blog of blogs">
+      <div class="col-medium-4 col-small-12" *ngFor="let blog of blogs">
         <div class="item">
           <div class="thumb">
             <a href=""><img src="{{blog.img}}" alt=""></a>
@@ -43,14 +43,14 @@
 <section class="client-area">
   <div class="container">
     <div class="row">
-      <div class="col-4 info">
+      <div class="col-medium-4 col-large-4 col-smallest-12 info">
         <h4>Our largest education campus</h4>
         <p>
           Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham
           melancholy son themselves.
         </p>
       </div>
-      <div class="col-8">
+      <div class="col-medium-8 col-large-8 col-smallest-12">
         <div class="client-logo-carousel">
           <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
             <div class="client-item" ngxSlickItem *ngFor="let logoCarousel of clientLogoCarousel">

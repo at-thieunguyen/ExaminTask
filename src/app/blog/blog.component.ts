@@ -16,20 +16,40 @@ export class BlogComponent implements OnInit {
     'slidesToScroll': 1,
     'infinite': true,
     'autoplay': true,
-    'autoplaySpeed': 1500
+    'autoplaySpeed': 1500,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
   };
   blogs = [
     {
       img: './assets/images/blog1.jpg',
-      title:'Objection happiness something'
+      title: 'Objection happiness something'
     },
     {
       img: './assets/images/blog2.jpg',
-      title:'Meant to learn of vexed'
+      title: 'Meant to learn of vexed'
     },
     {
       img: './assets/images/blog3.jpg',
-      title:'Delightful up dissimilar'
+      title: 'Delightful up dissimilar'
     }
   ]
   clientLogoCarousel = [

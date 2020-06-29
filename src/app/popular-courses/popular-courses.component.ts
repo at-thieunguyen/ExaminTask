@@ -45,6 +45,32 @@ export class PopularCoursesComponent implements OnInit {
     'infinite': true,
     'autoplay': false,
     // 'autoplaySpeed': 10000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
   };
 
   slickInit(e) {

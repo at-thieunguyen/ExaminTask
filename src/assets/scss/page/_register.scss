@@ -1,6 +1,9 @@
 .register-area {
   @include pxRem(padding-top, 80);
   background-color: #f9f9f9;
+  .img-register {
+    max-width: 100%;
+  }
 }
 .form-group {
   @include pxRem(margin-bottom, 15);

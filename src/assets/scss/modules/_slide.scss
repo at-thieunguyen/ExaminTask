@@ -2,18 +2,24 @@
   .carousel-slide {
     position: relative;
     width: 100%;
+    .shadow {
+      position: relative;
+      z-index: 1;
+    }
     .content-box-cell {
       position: absolute;
       top: 50%;
     }
   }
   .banner {
-    width: 100%;
+    height: 778px;
   }
   .banner-text {
-      color: $white;
-      text-transform: uppercase;
+    color: $white;
+    text-transform: uppercase;
   }
 }
-
-
+.bg-cover {
+  background-position: center;
+  background-size: cover;
+}

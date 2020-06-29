@@ -38,8 +38,34 @@ export class ExperienceAdvisorsComponent implements OnInit {
     'slidesToScroll': 1,
     'dots': true,
     'infinite': true,
-    'autoplay': true,
-    'autoplaySpeed': 1500
+    'autoplay': false,
+    'autoplaySpeed': 1500,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
   };
 
   slickInit(e) {
