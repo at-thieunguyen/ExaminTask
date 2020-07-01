@@ -28,6 +28,7 @@
   @include pxRem(padding-bottom, 20);
   @include pxRem(font-size, 24);
   position: relative;
+  font-weight: 600;
   text-transform: uppercase;
   &::before {
     background: $secondary;

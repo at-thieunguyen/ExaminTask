@@ -45,41 +45,6 @@
     }
   }
 }
-.navbar-general {
-  display: flex;
-  justify-content: space-between;
-  .navbar-header {
-    @include pxRem(padding, 18 15);
-    @include pxRem(margin-left, -15);
-  }
-  .collapse {
-    .navbar-item {
-      @include pxRem(padding, 30 15);
-      @include pxRem(font-size, 12);
-      display: flex;
-      justify-content: flex-end;
-      font-weight: 600;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-    li {
-      // @include pxRem(margin-right, 10px);
-    }
-    .navbar-link {
-      @include pxRem(padding, 36 11);
-      font-size: 13.2px !important;
-      color: #333333;
-      &::after {
-        @include pxRem(margin-left, 6);
-        @include pxRem(margin-top, 3);
-        content: "\f107";
-        font-family: "Font Awesome 5 Free";
-      }
-    }
-    .navbar-collapse {
-    }
-  }
-}
 .page-header {
   position: sticky;
   top: 0;
@@ -90,6 +55,9 @@
     @include pxRem(padding, 18 15);
     @include pxRem(margin-left, -15);
   }
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
 }
 
 .header-top {
@@ -97,6 +65,10 @@
   background-color: #1b263a;
 }
 .nav-item {
+  .dropdown-item {
+    border-bottom: 1px solid #3e3e3e;
+    padding: 10px !important;
+  }
   .dropdown-toggle {
     // &::after {
     //   @include pxRem(margin-left, 6);
@@ -104,24 +76,37 @@
     //   content: "\f107";
     //   font-family: "Font Awesome 5 Free";
     // }
+    
   }
   a {
-    @include pxRem(padding, 20 15);
+    @include pxRem(padding, 20 10);
     color: #3e3e3e;
-    font-size: 12px;
+    font-size: 13.5px;
+    font-weight: 600;
     i {
-      @include pxRem(font-size, 12);
-      &:hover {
-        color: #1abc9c;
-      }
+      @include pxRem(font-size, 16);
     }
     &:hover {
-      color: #3e3e3e;
+      color: $secondary;
       text-decoration: none;
+      transition: 0.5s;
     }
   }
 }
 
 .img-logo-light {
   height: 18px;
+}
+.show {
+  display: block;
+}
+.dropdown:hover {
+  .dropdown-menu {
+    display: block;
+  }
+}
+.dropdown {
+  .dropdown-toggle:active {
+    pointer-events: none;
+  }
 }

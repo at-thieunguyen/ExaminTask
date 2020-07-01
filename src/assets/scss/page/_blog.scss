@@ -91,4 +91,9 @@
 .client-area {
   @include pxRem(padding-top, 80);
   background-color: #f9f9f9;
+  .single-item {
+    img {
+      margin: auto;
+    }
+  }
 }

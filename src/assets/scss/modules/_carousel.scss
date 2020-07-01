@@ -1,0 +1,31 @@
+.slick-prev, .slick-arrow {
+  @include pxRem(width, 45 !important);
+  @include pxRem(height, 45 !important);
+  @include pxRem(border-radius, 50);
+  @include pxRem(font-size, 25);
+  color: #636967;
+  background-color: $white;
+  border: 0.5px solid $white;
+  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+  cursor: pointer;
+  &::before {
+    content: "→";
+  }
+  &:hover {
+    color: $secondary;
+    transition: 0.5s;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.carousel:hover {
+  .slick-prev, .slick-arrow {
+    display: block;
+  }
+}
+.popular-courses {
+  .slick-prev:active {
+    pointer-events: none;
+  }
+}

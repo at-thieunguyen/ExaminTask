@@ -31,7 +31,7 @@ export class SlideenrollComponent implements OnInit {
     'slidesToScroll': 1,
     'infinite': true,
     'autoplay': true,
-    'autoplaySpeed': 1500
+    'autoplaySpeed': 1500,
   };
 
   slickInit(e) {

@@ -1,26 +1,34 @@
 @media screen and (min-width: 320px) {
   html {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 960px) {
+  .top-navbar {
+    display: none !important;
+  }
   .register-area {
-    .img-register {
+    .img-res {
       text-align: center;
     }
   }
+  .fun-factor-area {
+    .fun-fact {
+      margin-bottom: 20px;
+    }
+  }
   html {
-    font-size: 8px;
+    font-size: 6px;
   }
 }
 @media screen and (min-width: 480px) {
   html {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 480px) {
   html {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -41,15 +49,12 @@
 .student-text {
   text-align: center;
 }
-.top-navbar {
-    
-  }
 html {
-  font-size: 14px;
+  font-size: 12px;
 }
 @media screen and (max-width: 768px) {
   html {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 @media screen and (min-width: 960px) {
@@ -63,11 +68,6 @@ html {
   }
 }
 @media screen and (max-width: 960px) {
-  .fun-factor-area {
-    .fun-fact {
-      margin-bottom: 20px;
-    }
-  }
   html {
     font-size: 12px;
   }

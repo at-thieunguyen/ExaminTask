@@ -29,6 +29,7 @@
         width: 100%;
         border-top: 1px solid #ececec;
         ul {
+          @include pxRem(padding-bottom, 15);
           display: flex;
           li {
             @include pxRem(padding, 5 10);
@@ -86,6 +87,9 @@
   @include pxRem(padding-top, 80);
   @include pxRem(margin-bottom, 60);
   text-align: center;
+  h2 {
+    font-weight: 600;
+  }
   p {
     width: 65%;
     margin: auto;

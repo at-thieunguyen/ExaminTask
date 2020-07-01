@@ -41,21 +41,27 @@ export class PopularCoursesComponent implements OnInit {
   slideConfig = {
     'slidesToShow': 3,
     'slidesToScroll': 1,
-    'dots': true,
+    'dots': false,
     'infinite': true,
-    'autoplay': false,
+    'autoplay': true,
     // 'autoplaySpeed': 10000,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 960,
+        settings: {
+          slidesToShow: 2
         }
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2
+          slidesToShow: 1
         }
       },
       {

@@ -36,7 +36,7 @@ export class ExperienceAdvisorsComponent implements OnInit {
   slideConfig = {
     'slidesToShow': 3,
     'slidesToScroll': 1,
-    'dots': true,
+    'dots': false,
     'infinite': true,
     'autoplay': false,
     'autoplaySpeed': 1500,

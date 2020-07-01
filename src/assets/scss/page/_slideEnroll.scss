@@ -1,6 +1,5 @@
 .slide-enroll {
   @include pxRem(padding-top, 80);
-  @include pxRem(padding-bottom, 80);
   &:focus {
     outline: none;
     cursor: grab;
@@ -14,6 +13,8 @@
         a {
           color: $primary;
           text-transform: capitalize;
+          text-decoration: none;
+          font-weight: 600;
         }
       }
       h5 {

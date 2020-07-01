@@ -22,6 +22,7 @@
       background: #ffffff;
       cursor: pointer;
       &:hover {
+        text-decoration: none;
         background: transparent;
         transition: 0.5s;
       }

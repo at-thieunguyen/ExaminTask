@@ -34,17 +34,11 @@
       color: $grey;
     }
   }
-  .separator {
-    .border {
-      border-bottom: 1px solid rgba(20, 23, 28, 0.1);
-      margin-bottom: 50px;
-      padding-bottom: 50px;
-      overflow: hidden;
-      float: left;
-      width: 100%;
-    }
+  .title-about-info {
+    font-weight: 600;
   }
   .our-features {
+    @include pxRem(padding-top, 80);
     .item-feature {
       display: flex;
       justify-content: flex-start;
