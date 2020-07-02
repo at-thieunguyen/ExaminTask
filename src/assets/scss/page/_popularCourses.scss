@@ -39,7 +39,7 @@
         }
         a {
           @include pxRem(font-size, 11);
-          @include pxRem(padding, 5 20);
+          @include pxRem(padding, 10 20);
           font-weight: 600;
           text-transform: uppercase; 
         }

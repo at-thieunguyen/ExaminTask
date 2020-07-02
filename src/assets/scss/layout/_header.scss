@@ -11,7 +11,7 @@
       @include pxRem(margin-left, 8);
       @include pxRem(padding, 8 25);
       @include pxRem(border-radius, 5);
-      background: $secondary none repeat scroll 0 0;
+      background: $secondary;
       color: $primary;
       display: inline-block;
       font-weight: 600;
@@ -49,7 +49,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: #ffffff;
+  background: $white;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   .navbar-header {
     @include pxRem(padding, 18 15);
@@ -65,24 +65,17 @@
   background-color: #1b263a;
 }
 .nav-item {
-  .dropdown-item {
-    border-bottom: 1px solid #3e3e3e;
-    padding: 10px !important;
-  }
   .dropdown-toggle {
-    // &::after {
-    //   @include pxRem(margin-left, 6);
-    //   @include pxRem(margin-top, 3);
-    //   content: "\f107";
-    //   font-family: "Font Awesome 5 Free";
-    // }
-    
+    font-weight: 600;
+  }
+  .dropdown-item {
+    @include pxRem(padding, 10 30);
+    border-bottom: 1px solid #e7e7e7;
   }
   a {
     @include pxRem(padding, 20 10);
     color: #3e3e3e;
     font-size: 13.5px;
-    font-weight: 600;
     i {
       @include pxRem(font-size, 16);
     }

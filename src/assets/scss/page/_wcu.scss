@@ -13,7 +13,7 @@
     position: relative;
   }
   .content {
-    @include pxRem(padding, 80 15);
+    @include pxRem(padding, 80 40);
   }
   .site-heading-wcu {
     @include pxRem(margin-bottom, 20);
@@ -26,26 +26,43 @@
       text-transform: uppercase;
       z-index: 1;
       &::before {
-        @include pxRem(height, 2);
-        @include pxRem(width, 40);
-        @include pxRem(margin-left, -40);
-        background: $secondary;
+        // @include pxRem(height, 2);
+        // @include pxRem(width, 40);
+        // @include pxRem(margin-left, -40);
+        // background: $secondary;
+        // bottom: 0;
+        // left: 6%;
+        // content: "";
+        // position: absolute;
+        // z-index: 1;
+        background: #ffb606 none repeat scroll 0 0;
         bottom: 0;
-        left: 6%;
         content: "";
+        height: 2px;
+        left: 8%;
+        /* margin-left: -40px; */
         position: absolute;
+        width: 30px;
         z-index: 1;
       }
       &::after {
-        @include pxRem(height, 2);
-        @include pxRem(width, 20);
-        @include pxRem(margin-left, -40);
-        @include pxRem(left, 86);
-        background: $secondary;
+        // @include pxRem(height, 2);
+        // @include pxRem(width, 20);
+        // @include pxRem(margin-left, -40);
+        // background: $secondary;
+        // bottom: 0;
+        // left: 13%;
+        // content: "";
+        // position: absolute;
+        // z-index: 1;
+        background: #ffb606 none repeat scroll 0 0;
         bottom: 0;
         content: "";
+        height: 2px;
+        left: 0;
+        margin-left: 5px;
         position: absolute;
-        z-index: 1;
+        width: 40px;
       }
     }
     p {

@@ -2,13 +2,10 @@
   .carousel-slide {
     position: relative;
     width: 100%;
-    .shadow {
-      position: relative;
-      z-index: 1;
-    }
     .content-box-cell {
       position: absolute;
-      top: 50%;
+      top: 40%;
+      z-index: 10;
     }
   }
   .banner {
@@ -18,6 +15,23 @@
     color: $white;
     font-weight: 600;
     text-transform: uppercase;
+  }
+}
+.bg-fixed {
+  background-attachment: fixed;
+}
+.shadow {
+  position: relative;
+  z-index: 1;
+  &::after {
+    position: absolute;
+    background-color: #002147;
+    content: "";
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
   }
 }
 .bg-cover {
