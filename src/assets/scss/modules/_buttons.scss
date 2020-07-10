@@ -61,6 +61,16 @@
     transition: 0.5s;
   }
 }
+.btn-tab-content {
+  background: #f4f4f4 none repeat scroll 0 0;
+    border: 1px solid #e7e7e7;
+    border-radius: inherit;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    padding: 10px 25px;
+    text-transform: uppercase;
+}
 .btn-dark {
   background-color: $primary;
   color: $white;

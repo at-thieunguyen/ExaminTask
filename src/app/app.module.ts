@@ -19,6 +19,9 @@ import { EventComponent } from './event/event.component';
 import { RegisterComponent } from './register/register.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { BlogComponent } from './blog/blog.component';
+import { CoursesComponent } from './courses/courses.component';
+import { HomeComponent } from './home/home.component';
+import { CoursesDetailComponent } from './courses-detail/courses-detail.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +39,10 @@ import { BlogComponent } from './blog/blog.component';
     EventComponent,
     RegisterComponent,
     TestimonialsComponent,
-    BlogComponent
+    BlogComponent,
+    CoursesComponent,
+    HomeComponent,
+    CoursesDetailComponent
   ],
   imports: [
     BrowserModule,

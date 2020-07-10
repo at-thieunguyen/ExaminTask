@@ -1,26 +1,31 @@
-<section class="popular-courses">
+<div class="breadcrumb-area shadow bg-fixed banner-courses bg-cover"
+  style="background-image: url('./assets/images/slide2.jpg')">
   <div class="container">
     <div class="row">
-      <div class="site-heading">
-        <div class="col-12">
-          <h2>Popular courses</h2>
-          <p>
-            Discourse assurance estimable applauded to so. Him everything melancholy uncommonly but solicitude
-            inhabiting projection off. Connection stimulated estimating excellence an to impression.
-          </p>
-        </div>
+      <div class="col-md-12 courses-general">
+        <h1 class="title-banner">Courses</h1>
+        <ul class="breadcrumb-courses">
+          <li class="breadcrumb-item-courses"><a href=""><i class="fas fa-home"></i>Home</a></li>
+          <li class="breadcrumb-item-courses"><a href="#">Page</a></li>
+          <li class="breadcrumb-item-courses"><a href="#">Courses</a></li>
+        </ul>
       </div>
     </div>
-    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)"
-      (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
-      <div class="popular-courses-item" ngxSlickItem *ngFor="let slide of slides">
+  </div>
+</div>
+<div class="default-padding">
+  <section class="popular-courses">
+    <div class="container">
+      <div class="popular-courses-item">
         <div class="row">
-          <div class="col-12">
-            <div class="popular-slide">
+          <div class="col-4" *ngFor="let slide of slides">
+            <div class="popular-item">
               <div class="item">
                 <div class="thumb">
                   <a href="#"><img class="popular-img" src="{{slide.img}}" alt=""></a>
-                  <div class="price">price : Free</div>
+                  <div class="overlay">
+                    <a class="btn btn-secondary" href=""><i _ngcontent-cra-c62="" class="fas fa-chart-bar"></i>Enroll now</a>
+                  </div>
                 </div>
                 <div class="info">
                   <div class="author-info">
@@ -49,14 +54,16 @@
                       <li><i class="fas fa-user"></i>6,690 </li>
                       <li><i class="fas fa-clock"></i> 16:00</li>
                     </ul>
-                      <a class="btn-secondary btn-bd" href="">Enroll now</a>
+                    <div class="price-text">{{slide.price}}</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
-    </ngx-slick-carousel>
-  </div>
-</section>
+
+    </div>
+  </section>
+</div>

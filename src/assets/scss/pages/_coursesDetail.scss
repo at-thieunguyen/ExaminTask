@@ -1,0 +1,106 @@
+.courses-detail {
+  .courses-detail-info {
+    .tab-content {
+      @include pxRem(padding-bottom, 80);
+      .title-courses {
+        @include pxRem(margin-bottom, 15);
+        @include pxRem(margin-top, 15);
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      li {
+        @include pxRem(margin-bottom, 15);
+      }
+    }
+    .img-courses-detail {
+      max-width: 100%;
+    }
+    .info-author {
+      @include pxRem(margin-top, 25);
+      @include pxRem(margin-bottom, 25);
+      @include pxRem(padding, 15 0);
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #e7e7e7;
+      .item-author {
+        display: flex;
+      }
+    }
+    .btn-tab {
+      @include pxRem(margin-bottom, 15);
+      display: flex;
+    }
+  }
+  .avt-courses {
+    @include pxRem(height, 50);
+    @include pxRem(padding, 2);
+    @include pxRem(width, 50);
+    @include pxRem(margin-right, 10);
+    border: 1px solid #e7e7e7;
+    border-radius: 50%;
+  }
+}
+.courses-margin-author {
+  @include pxRem(margin-left, 20);
+  @include pxRem(padding-left, 20);
+  border-left: 1px dashed #999999;
+}
+.active {
+  background-color: $secondary;
+}
+.sidebar {
+  .title-post {
+    @include pxRem(margin-bottom, 20);
+    @include pxRem(padding-bottom, 15);
+    display: inline-block;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .input-search {
+    @include pxRem(padding, 6 12);
+    @include pxRem(font-size, 14);
+    display: block;
+    width: 100%;
+    color: #555;
+  }
+  .sidebar-search {
+    @include pxRem(margin-bottom, 30);
+    display: flex;
+  }
+  .sidebar-info {
+    .list-item-sidebar {
+      @include pxRem(margin-bottom, 10);
+      @include pxRem(padding-bottom, 10);
+      border-bottom: 1px dashed #999999;
+      .text-sidebar {
+        color: #666666;
+        text-transform: capitalize;
+        z-index: 1;
+        span {
+          @include pxRem(border-radius, 5);
+          @include pxRem(padding, 0 5);
+          background: #f4f4f4;
+          color: $primary;
+          right: 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .sidebar-item-post {
+    .content {
+      display: flex;
+      .thumb {
+        @include pxRem(width, 80);
+        @include pxRem(height, 80);
+        padding: 0;
+        .img-post-sidebar {
+          max-width: 100%;
+        }
+      }
+      .info {
+        @include pxRem(padding-left, 15);
+      }
+    }
+  }
+}

@@ -1,0 +1,315 @@
+<div class="breadcrumb-area shadow bg-fixed banner-courses bg-cover"
+  style="background-image: url('./assets/images/slide2.jpg')">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 courses-general">
+        <h1 class="title-banner">Courses Detail</h1>
+        <ul class="breadcrumb-courses">
+          <li class="breadcrumb-item-courses"><a href=""><i class="fas fa-home"></i>Home</a></li>
+          <li class="breadcrumb-item-courses"><a href="#">Page</a></li>
+          <li class="breadcrumb-item-courses"><a href="#">Courses</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="courses-detail default-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="courses-detail-info">
+          <h2>Java Programming Masterclass with professional author</h2>
+          <div class="thumb">
+            <img class="img-courses-detail" src="./assets/images/coursesDetail1.jpg" alt="">
+          </div>
+          <div class=courses-meta>
+            <div class="info-author">
+              <div class="item-author">
+                <a href=""><img class="avt-courses" src="./assets/images/avtteam1.jpg" alt=""></a>
+                <div class="description-author">
+                  <h6 class="title-courses-info">Author</h6>
+                  <a href="">Munil Druva</a>
+                </div>
+              </div>
+              <div class="item-category courses-margin-author">
+                <h6 class="title-courses-info">Category</h6>
+                <a href="#">Science</a>
+              </div>
+              <div class="item-rating courses-margin-author">
+                <h6 class="title-courses-info">Rating</h6>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>4.5 (16)</span>
+              </div>
+              <div class="item-price courses-margin-author">
+                <h6 class="title-courses-info">Price</h6>
+                <span>$29.00</span>
+              </div>
+              <div class="btn-enroll ">
+                <a class="btn btn-dark" href=""><i class="fas fa-chart-bar"></i>Enroll</a>
+              </div>
+            </div>
+            <div class="tab-info">
+              <ul class="btn-tab">
+                <li class="tab-link"><button class="btn btn-tab-content" (click)="step = 1;">Overview</button></li>
+                <li class="tab-link"><button class="btn btn-tab-content" (click)="step = 2;">Curriculum</button></li>
+                <li class="tab-link"><button class="btn btn-tab-content" (click)="step = 3;">Advisor</button></li>
+                <li class="tab-link"><button class="btn btn-tab-content" (click)="step = 4;">reviews</button></li>
+              </ul>
+            </div>
+            <container-element [ngSwitch]="step">
+              <div id="overview" *ngSwitchCase="1" class="tab-content">
+                <h5 class="title-courses">Course Desscription</h5>
+                <p>Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus who direct
+                  esteem.
+                  It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable
+                  projecting expression. Way mrs end gave tall walk fact bed.</p>
+                <p>Placing assured be if removed it besides on. Far shed each high read are men over day. Afraid we
+                  praise
+                  lively he suffer family estate is. Ample order up in of in ready. Timed blind had now those ought set
+                  often which. Or snug dull he show more true wish. No at many deny away miss evil. On in so indeed
+                  spirit
+                  an mother. Amounted old strictly but marianne admitted. People former is remove remain as.</p>
+                <h5 class="title-courses">Certification</h5>
+                <p>
+                  Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus who direct
+                  esteem.
+                  It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable
+                  projecting expression. Way mrs end gave tall walk fact bed.
+                </p>
+                <h5 class="title-courses">Learning Outcomes</h5>
+                <ul>
+                  <li><i class="fas fa-check-double"></i> Over 37 lectures and 55.5 hours of content!</li>
+                  <li><i class="fas fa-check-double"></i> Testing Training Included.</li>
+                  <li><i class="fas fa-check-double"></i> Best suitable for beginners to advanced level users and who
+                    learn faster when demonstrated.</li>
+                  <li><i class="fas fa-check-double"></i> Course content designed by considering current software
+                    testing
+                    technology and the job market.</li>
+                  <li><i class="fas fa-check-double"></i> Practical assignments at the end of every session.</li>
+                  <li><i class="fas fa-check-double"></i> Practical learning experience with live project work and
+                    examples.</li>
+                  <li><i class="fas fa-check-double"></i> Unlimited Resourses</li>
+                </ul>
+              </div>
+              <div id="curriculum" *ngSwitchCase="2" class="tab-content">
+                <p>Placing assured be if removed it besides on. Far shed each high read are men over day. Afraid we
+                  praise
+                  lively he suffer family estate is. Ample order up in of in ready. Timed blind had now those ought set
+                  often which. Or snug dull he show more true wish. No at many deny away miss evil. On in so indeed
+                  spirit
+                  an mother. Amounted old strictly but marianne admitted. People former is remove remain as.
+                </p>
+                <h5>LIST OF COURSES</h5>
+                <div class="courses-list-item">
+                  <div class="panel-heading-courses">
+                    <h5><a href=""></a>Java programming</h5>
+                  </div>
+                  <div class="panel-content">
+                    <div class="panel-content-body">
+                      <ul>
+                        <li>
+                          <div class="item-name">
+                            <i class="fas fa-play"></i>
+                            <span>Lecture 1.1</span>
+                          </div>
+                          <div class="item-title">
+                            <h5>Introduction of java</h5>
+                          </div>
+                          <div class="item-info">
+                            <span>Duration: 1 hours 30 min</span>
+                            <a href="#">Preview</a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item name">
+                            <i class="fas fa-file"></i>
+                            <span>Lecture 1.2</span>
+                          </div>
+                          <div class="item title">
+                            <h5>Basic development</h5>
+                          </div>
+                          <div>
+                            <div class="item info">
+                              <span>Duration: 3 hours 15 min</span>
+                              <a href="#">Preview</a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="panel-content">
+                    <div class="panel-content-body">
+                      <ul>
+                        <li>
+                          <div class="item-name">
+                            <i class="fas fa-play"></i>
+                            <span>Lecture 1.1</span>
+                          </div>
+                          <div class="item-title">
+                            <h5>Introduction of java</h5>
+                          </div>
+                          <div class="item-info">
+                            <span>Duration: 1 hours 30 min</span>
+                            <a href="#">Preview</a>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="item name">
+                            <i class="fas fa-file"></i>
+                            <span>Lecture 1.2</span>
+                          </div>
+                          <div class="item title">
+                            <h5>Basic development</h5>
+                          </div>
+                          <div>
+                            <div class="item info">
+                              <span>Duration: 2 hours 12 min</span>
+                              <a href="#">Preview</a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="advisor" *ngSwitchCase="3" class="tab-content">
+                <div class="advisor-list-item" *ngFor="let item of items">
+                  <div class="item">
+                    <div class="thumb">
+                      <img src="{{item.img}}" alt="">
+                    </div>
+                    <div class="info">
+                      <h5>{{item.name}}</h5>
+                      <span>{{item.position}}</span>
+                      <p>{{item.des}}</p>
+                      <ul>
+                        <li>
+                          <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fab fa-dribbble"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fab fa-youtube"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="reviews" *ngSwitchCase="4" class="tab-content">
+                <div class="advisor-rating-list">
+                  <h5>Average Rating</h5>
+                  <div class="item rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>4.5 (16)</span>
+                  </div>
+                  <ul>
+                    <li>
+                      <span>5 Star</span>
+                      <div class="rating-bar"></div>
+                      <span>13</span>
+                    </li>
+                    <li>
+                      <span>4 Star</span>
+                      <div class="rating-bar"></div>
+                      <span>1</span>
+                    </li>
+                    <li>
+                      <span>3 Star</span>
+                      <div class="rating-bar"></div>
+                      <span>0</span>
+                    </li>
+                    <li>
+                      <span>2 Star</span>
+                      <div class="rating-bar"></div>
+                      <span>1</span>
+                    </li>
+                    <li>
+                      <span>1 Star</span>
+                      <div class="rating-bar"></div>
+                      <span>0</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </container-element>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="sidebar">
+          <aside>
+            <div class="sidebar-search">
+              <input type="text" placeholder="Courses name" class="input-search">
+              <a class="btn btn-dark" href="submit">Search</a>
+            </div>
+            <div class="sidebar-item category">
+              <h5 class="title-post">Courses Category</h5>
+              <div class="sidebar-info">
+                <ul>
+                  <li class="list-item-sidebar">
+                    <a class="text-sidebar" href="#">Java Programming <span>23</span></a>
+                  </li>
+                  <li class="list-item-sidebar">
+                    <a class="text-sidebar" href="#">Social Science <span>0</span></a>
+                  </li>
+                  <li class="list-item-sidebar">
+                    <a class="text-sidebar" href="#">Business Management <span>12</span></a>
+                  </li>
+                  <li class="list-item-sidebar">
+                    <a class="text-sidebar" href="#">Online Learning <span>17</span></a>
+                  </li>
+                  <li class="list-item-sidebar">
+                    <a class="text-sidebar" href="#">Course Management <span>0</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="sidebar-item-post">
+              <h5 class="title-post">Popular Courses</h5>
+              <div class="item" *ngFor="let item of items">
+                <div class="content">
+                  <div class="thumb">
+                    <a href="#">
+                      <img class="img-post-sidebar" src="{{item.imgPost}}" alt="Thumb">
+                    </a>
+                  </div>
+                  <div class="info">
+                    <h5>
+                      <a href="#">Profession paython learing</a>
+                    </h5>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      <span>4.5 (23,890)</span>
+                    </div>
+                    <div class="meta">
+                      <i class="fas fa-user"></i> By <a href="#">Drup Paul</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -15,7 +15,7 @@ export class TestimonialsComponent implements OnInit {
     'slidesToShow': 2,
     'slidesToScroll': 1,
     'infinite': true,
-    'autoplay': false,
+    'autoplay': true,
     'autoplaySpeed': 1500,
     responsive: [
       {

@@ -13,26 +13,31 @@ export class PopularCoursesComponent implements OnInit {
   }
   slides = [
     {
+      avt:'././assets/images/avtteam1.jpg',
       img: './assets/images/slideItem1.jpg',
       name: 'Jonathom Kiyam',
       title: 'Covers Big Data analysis',
     },
     {
+      avt:'././assets/images/avtteam2.jpg',
       img: './assets/images/slideItem2.jpg',
       name: 'Huma Park',
       title: 'professional web development',
     },
     {
+      avt:'././assets/images/advisor1.jpg',
       img: './assets/images/slideItem3.jpg',
       name: 'Prokash Timer',
       title: 'Java Programming Masterclass'
     },
     {
+      avt:'././assets/images/advisor2.jpg',
       img: './assets/images/slideItem4.jpg',
       name: 'Munil Druva',
       title: 'Stanford Engineering',
     },
     {
+      avt:'././assets/images/advisor3.jpg',
       img: './assets/images/slideItem5.jpg',
       name: 'Akua Paul',
       title: 'Stanford Engineering',

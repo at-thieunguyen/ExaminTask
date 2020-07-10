@@ -49,7 +49,7 @@
               HOME
             </a>
             <div class="dropdown-menu">
-              <a href="#" class="dropdown-item">Home Version One</a>
+              <a routerLink="/home" class="dropdown-item">Home Version One</a>
               <a href="#" class="dropdown-item">Home Version Two</a>
               <a href="#" class="dropdown-item">Home Version Three</a>
               <a href="#" class="dropdown-item">Home Version Four</a>
@@ -67,16 +67,46 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               PAGES
             </a>
-            <div class="dropdown-menu">
-              <a href="#" class="dropdown-item">About us</a>
-              <a href="#" class="dropdown-item">Contact</a>
-              <a href="#" class="dropdown-item">Services</a>
-              <a href="#" class="dropdown-item">Info</a>
-              <a href="#" class="dropdown-item">FAQ</a>
-              <a href="#" class="dropdown-item">Pricing</a>
-              <a href="#" class="dropdown-item">Comingsoon</a>
-              <a href="#" class="dropdown-item">Maintances</a>
-              <a href="#" class="dropdown-item">Team</a>
+            <div class="dropdown-menu nav-menu">
+              <div class="row">
+                <div class="col-3 pd-item">
+                  <h6>Gallery</h6>
+                  <ul>
+                    <li><a href="#" class="dropdown-item">Gallery Two Column</a></li>
+                    <li><a href="#" class="dropdown-item">Gallery Three Column</a></li>
+                    <li><a href="#" class="dropdown-item">Gallery Four Column</a></li>
+                    <li><a href="#" class="dropdown-item">Gallery Five Column</a></li>
+                  </ul>
+                </div>
+                <div class="col-3 pd-item">
+                  <h6>Advisor</h6>
+                  <ul>
+                    <li><a href="#" class="dropdown-item">Advisor Carousel</a></li>
+                    <li><a href="#" class="dropdown-item">Advisor Two Colum</a></li>
+                    <li><a href="#" class="dropdown-item">Advisor Three Colum</a></li>
+                    <li><a href="#" class="dropdown-item">Advisor Carousel Two</a></li>
+                  </ul>
+                </div>
+                <div class="col-3 pd-item">
+                  <h6>User Pages</h6>
+                  <ul>
+                    <li><a href="#" class="dropdown-item">Profile</a></li>
+                    <li><a href="#" class="dropdown-item">Edit Profile</a></li>
+                    <li><a href="#" class="dropdown-item">login</a></li>
+                    <li><a href="#" class="dropdown-item">Register</a></li>
+                  </ul>
+                </div>
+                <div class="col-3 pd-item">
+                  <h6>Orther</h6>
+                  <ul>
+                    <li><a href="#" class="dropdown-item">About Us</a></li>
+                    <li><a href="#" class="dropdown-item">Faq</a></li>
+                    <li><a href="#" class="dropdown-item">Pricing Table</a></li>
+                    <li><a href="#" class="dropdown-item">Contact</a></li>
+                    <li><a href="#" class="dropdown-item">Error Page</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -84,10 +114,13 @@
               COURSES
             </a>
             <div class="dropdown-menu">
-              <a href="#" class="dropdown-item">Default work</a>
-              <a href="#" class="dropdown-item">Grid word</a>
-              <a href="#" class="dropdown-item">Full width work</a>
-              <a href="#" class="dropdown-item">Single work</a>
+              <ul>
+                <li><a routerLink="/courses" class="dropdown-item">Courses Carousel One</a></li>
+                <li><a href="#" class="dropdown-item">Courses Grid One</a></li>
+                <li><a href="#" class="dropdown-item">Courses Grid Two</a></li>
+                <li><a href="#" class="dropdown-item">Courses Carousel Two</a></li>
+                <li><a routerLink="/coursesDetail" class="dropdown-item">Course Details</a></li>
+              </ul>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -95,12 +128,10 @@
               TEACHERS
             </a>
             <div class="dropdown-menu">
-              <a href="#" class="dropdown-item">Blog 2 column</a>
-              <a href="#" class="dropdown-item">Blog 3 column</a>
-              <a href="#" class="dropdown-item">Blog 4 column</a>
-              <a href="#" class="dropdown-item">Left Sidebar</a>
-              <a href="#" class="dropdown-item">Right Sidebar</a>
-              <a href="#" class="dropdown-item">Full width</a>
+              <ul>
+                <li><a href="#" class="dropdown-item">Advisor</a></li>
+                <li><a href="#" class="dropdown-item">Advisor Details</a></li>
+              </ul>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -108,12 +139,11 @@
               EVENT
             </a>
             <div class="dropdown-menu">
-              <a href="#" class="dropdown-item">Blog 2 column</a>
-              <a href="#" class="dropdown-item">Blog 3 column</a>
-              <a href="#" class="dropdown-item">Blog 4 column</a>
-              <a href="#" class="dropdown-item">Left Sidebar</a>
-              <a href="#" class="dropdown-item">Right Sidebar</a>
-              <a href="#" class="dropdown-item">Full width</a>
+              <ul>
+                <li><a href="#" class="dropdown-item">Event Mixed Colum</a></li>
+                <li><a href="#" class="dropdown-item">Event Grid Colum</a></li>
+                <li><a href="#" class="dropdown-item">Event Carousel</a></li>
+              </ul>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -121,12 +151,14 @@
               BLOG
             </a>
             <div class="dropdown-menu">
-              <a href="#" class="dropdown-item">Blog 2 column</a>
-              <a href="#" class="dropdown-item">Blog 3 column</a>
-              <a href="#" class="dropdown-item">Blog 4 column</a>
-              <a href="#" class="dropdown-item">Left Sidebar</a>
-              <a href="#" class="dropdown-item">Right Sidebar</a>
-              <a href="#" class="dropdown-item">Full width</a>
+              <ul>
+                <li><a href="#" class="dropdown-item">Blog Standard</a></li>
+                <li><a href="#" class="dropdown-item">Blog Left Sidebar</a></li>
+                <li><a href="#" class="dropdown-item">Blog Right Sidebar</a></li>
+                <li><a href="#" class="dropdown-item">Single Standard</a></li>
+                <li><a href="#" class="dropdown-item">Single Left Sidebar</a></li>
+                <li><a href="#" class="dropdown-item">Single Right Sidebar</a></li>
+              </ul>
             </div>
           </li>
           <li class="nav-item dropdown">

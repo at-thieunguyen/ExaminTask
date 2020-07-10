@@ -38,7 +38,7 @@ export class ExperienceAdvisorsComponent implements OnInit {
     'slidesToScroll': 1,
     'dots': false,
     'infinite': true,
-    'autoplay': false,
+    'autoplay': true,
     'autoplaySpeed': 1500,
     responsive: [
       {
