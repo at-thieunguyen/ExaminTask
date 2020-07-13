@@ -5,7 +5,7 @@
       <div class="col-md-12 courses-general">
         <h1 class="title-banner">Courses</h1>
         <ul class="breadcrumb-courses">
-          <li class="breadcrumb-item-courses"><a href=""><i class="fas fa-home"></i>Home</a></li>
+          <li class="breadcrumb-item-courses"><a href=""><i class="fas fa-home icon-courses"></i>Home</a></li>
           <li class="breadcrumb-item-courses"><a href="#">Page</a></li>
           <li class="breadcrumb-item-courses"><a href="#">Courses</a></li>
         </ul>
@@ -18,13 +18,13 @@
     <div class="container">
       <div class="popular-courses-item">
         <div class="row">
-          <div class="col-4" *ngFor="let slide of slides">
+          <div class="col-md-6 col-sm-12 col-lg-4" *ngFor="let slide of slides">
             <div class="popular-item">
               <div class="item">
                 <div class="thumb">
                   <a href="#"><img class="popular-img" src="{{slide.img}}" alt=""></a>
                   <div class="overlay">
-                    <a class="btn btn-secondary" href=""><i _ngcontent-cra-c62="" class="fas fa-chart-bar"></i>Enroll now</a>
+                    <a class="btn btn-secondary" href=""><i class="fas fa-chart-bar"></i>Enroll now</a>
                   </div>
                 </div>
                 <div class="info">
@@ -60,10 +60,8 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
-
     </div>
   </section>
 </div>

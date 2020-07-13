@@ -23,24 +23,22 @@
       border-radius: 5px;
       background-color: rgba(0, 0, 0, 0.65);
       .breadcrumb-item-courses {
+        &::before {
+          color: #ffb606;
+          content: "\f111";
+          font-family: "Font Awesome 5 Free";
+          font-size: 8px;
+          font-weight: 500;
+          padding: 0 10px;
+          position: relative;
+          top: -1px;
+        }
+        &:first-child {
           &::before {
-            color: #ffb606;
-            content: "\f111";
-            font-family: "Font Awesome 5 Free";
-            font-size: 8px;
-            font-weight: 500;
-            padding: 0 10px;
-            position: relative;
-            top: -1px;
-          }
-          &:first-child{
-            &::before {
             content: "";
             padding: 0;
           }
         }
-
-        
       }
     }
   }
@@ -137,4 +135,12 @@
       }
     }
   }
+}
+.icon-courses {
+  color: $secondary;
+}
+.text-breadcrumb {
+  color: $white;
+  font-weight: 600;
+  text-transform: uppercase;
 }

@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class CoursesDetailComponent implements OnInit {
 
   constructor() { }
+  showProgramJava: boolean = false;
+  showProgramPhp: boolean = false;
   step = 1;
 
   ngOnInit(): void {
@@ -27,14 +29,5 @@ export class CoursesDetailComponent implements OnInit {
       des: 'Several carried through an of up attempt gravity. Situation to be at offending elsewhere distrusts if. Particular use for considered projection cultivated. Worth of do doubt shall',
       imgPost: './assets/images/slideItem2.jpg',
     },
-    {
-      imgPost: './assets/images/slideItem3.jpg'
-    }
   ]
-
-  //function openTab 
-  toggleCourses() {
-    
-  }
-
 }

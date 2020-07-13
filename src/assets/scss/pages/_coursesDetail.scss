@@ -5,11 +5,125 @@
       .title-courses {
         @include pxRem(margin-bottom, 15);
         @include pxRem(margin-top, 15);
-        font-weight: 500;
+        font-weight: 600;
         text-transform: uppercase;
+      }
+      .item {
+        @include pxRem(margin-bottom, 30);
+        @include pxRem(padding, 30);
+        display: flex;
+        border: 1px solid #e7e7e7;
+        .img-item-advisor {
+          @include pxRem(max-width, 150);
+          @include pxRem(max-height, 150);
+        }
+        .info {
+          @include pxRem(padding-left, 20);
+          .text-advisor {
+            @include pxRem(margin, 0 0 15);
+            color: $grey;
+          }
+          .name-advisor {
+            @include pxRem(margin-bottom, 5);
+            font-weight: 500;
+            text-transform: uppercase;
+          }
+          .position-advisor {
+            @include pxRem(margin-bottom, 10);
+            color: $secondary;
+            font-weight: 500;
+            text-transform: uppercase;
+          }
+          .icon-contact {
+            @include pxRem(padding-top, 18);
+            border-top: 1px solid #e7e7e7;
+            display: flex;
+            .icon-contact-detail {
+              @include pxRem(width, 35);
+              @include pxRem(line-height, 37);
+              @include pxRem(height, 35);
+              @include pxRem(font-size, 12);
+              border: 1px solid #e7e7e7;
+              color: #002147;
+              display: inline-block;
+              text-align: center;
+            }
+            .mg-icon-contact {
+              @include pxRem(margin-right, 5);
+            }
+          }
+        }
       }
       li {
         @include pxRem(margin-bottom, 15);
+      }
+      .advisor-rating-list {
+        .title-rating {
+          @include pxRem(margin-bottom, 15);
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+        .list-rating {
+          display: flex;
+          border-bottom: 3px solid $secondary;
+          .rating-bar {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+          }
+          span {
+            color: $primary;
+            font-weight: 600;
+            &:last-child {
+              color: $grey;
+            }
+          }
+        }
+      }
+      .panel-heading-courses {
+        @include pxRem(padding, 20);
+        @include pxRem(margin-bottom, 15);
+        background: $white;
+        display: block;
+        border: 1px solid #e7e7e7;
+        &:hover {
+          cursor: pointer;
+        }
+        .list-courses {
+          &::after {
+            content: "\f105";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+          }
+        }
+      }
+      .panel-content-body {
+        .panel-item {
+          @include pxRem(padding, 10 15);
+          @include pxRem(margin-bottom, 15);
+          display: flex;
+          justify-content: space-between;
+          background: #f7f7f7;
+        }
+        .panel-content-item {
+          @include pxRem(padding, 20);
+          border: 1px solid #e7e7e7;
+        }
+      }
+      .title-list-panel {
+        @include pxRem(margin, 15 0);
+        font-weight: 600;
+        text-transform: uppercase;
+        &::after {
+          @include pxRem(top, 17);
+          @include pxRem(font-size, 20);
+          @include pxRem(right, 10);
+          content: "\f107";
+          position: absolute;
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          color: #002147;
+        }
       }
     }
     .img-courses-detail {
@@ -25,10 +139,21 @@
       .item-author {
         display: flex;
       }
+      .title-courses-info {
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      .text-author {
+        color: $grey;
+      }
     }
     .btn-tab {
       @include pxRem(margin-bottom, 15);
       display: flex;
+    }
+    .title-courses-detail {
+      font-weight: 600;
+      margin-bottom: 25px;
     }
   }
   .avt-courses {
@@ -45,10 +170,8 @@
   @include pxRem(padding-left, 20);
   border-left: 1px dashed #999999;
 }
-.active {
-  background-color: $secondary;
-}
 .sidebar {
+  @include pxRem(padding-left, 35);
   .title-post {
     @include pxRem(margin-bottom, 20);
     @include pxRem(padding-bottom, 15);
@@ -56,16 +179,16 @@
     font-weight: 600;
     text-transform: uppercase;
   }
-  .input-search {
-    @include pxRem(padding, 6 12);
-    @include pxRem(font-size, 14);
-    display: block;
-    width: 100%;
-    color: #555;
-  }
   .sidebar-search {
-    @include pxRem(margin-bottom, 30);
+    @include pxRem(margin-bottom, 40);
     display: flex;
+    .input-search {
+      @include pxRem(padding, 9 12);
+      @include pxRem(font-size, 14);
+      display: block;
+      width: 100%;
+      color: $grey;
+    }
   }
   .sidebar-info {
     .list-item-sidebar {
@@ -73,7 +196,10 @@
       @include pxRem(padding-bottom, 10);
       border-bottom: 1px dashed #999999;
       .text-sidebar {
-        color: #666666;
+        display: flex;
+        justify-content: space-between;
+        color: $grey;
+        width: 100%;
         text-transform: capitalize;
         z-index: 1;
         span {
@@ -100,6 +226,9 @@
       }
       .info {
         @include pxRem(padding-left, 15);
+        .text-info-post {
+          color: $primary;
+        }
       }
     }
   }

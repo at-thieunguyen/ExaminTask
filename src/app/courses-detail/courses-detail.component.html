@@ -5,9 +5,10 @@
       <div class="col-md-12 courses-general">
         <h1 class="title-banner">Courses Detail</h1>
         <ul class="breadcrumb-courses">
-          <li class="breadcrumb-item-courses"><a href=""><i class="fas fa-home"></i>Home</a></li>
-          <li class="breadcrumb-item-courses"><a href="#">Page</a></li>
-          <li class="breadcrumb-item-courses"><a href="#">Courses</a></li>
+          <li class="breadcrumb-item-courses"><a class="text-breadcrumb" href=""><i
+                class="fas fa-home icon-courses"></i>Home</a></li>
+          <li class="breadcrumb-item-courses"><a class="text-breadcrumb" href="#">Page</a></li>
+          <li class="breadcrumb-item-courses"><a class="text-breadcrumb" href="#">Courses</a></li>
         </ul>
       </div>
     </div>
@@ -18,38 +19,38 @@
     <div class="row">
       <div class="col-md-8">
         <div class="courses-detail-info">
-          <h2>Java Programming Masterclass with professional author</h2>
+          <h2 class="title-courses-detail">Java Programming Masterclass with professional author</h2>
           <div class="thumb">
             <img class="img-courses-detail" src="./assets/images/coursesDetail1.jpg" alt="">
           </div>
           <div class=courses-meta>
             <div class="info-author">
-              <div class="item-author">
+              <div class="item-author item-general">
                 <a href=""><img class="avt-courses" src="./assets/images/avtteam1.jpg" alt=""></a>
                 <div class="description-author">
                   <h6 class="title-courses-info">Author</h6>
-                  <a href="">Munil Druva</a>
+                  <a class="text-author" href="">Munil Druva</a>
                 </div>
               </div>
-              <div class="item-category courses-margin-author">
+              <div class="item-category courses-margin-author item-general">
                 <h6 class="title-courses-info">Category</h6>
-                <a href="#">Science</a>
+                <a class="text-author" href="#">Science</a>
               </div>
-              <div class="item-rating courses-margin-author">
+              <div class="item-rating courses-margin-author item-general">
                 <h6 class="title-courses-info">Rating</h6>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-                <span>4.5 (16)</span>
+                <i class="fas fa-star icon-courses"></i>
+                <i class="fas fa-star icon-courses"></i>
+                <i class="fas fa-star icon-courses"></i>
+                <i class="fas fa-star icon-courses"></i>
+                <i class="fas fa-star-half-alt icon-courses"></i>
+                <span class="text-author">4.5 (16)</span>
               </div>
-              <div class="item-price courses-margin-author">
+              <div class="item-price courses-margin-author item-general">
                 <h6 class="title-courses-info">Price</h6>
-                <span>$29.00</span>
+                <span class="text-author">$29.00</span>
               </div>
               <div class="btn-enroll ">
-                <a class="btn btn-dark" href=""><i class="fas fa-chart-bar"></i>Enroll</a>
+                <a class="btn btn-dark item-general" href=""><i class="fas fa-chart-bar"></i>Enroll</a>
               </div>
             </div>
             <div class="tab-info">
@@ -82,17 +83,21 @@
                 </p>
                 <h5 class="title-courses">Learning Outcomes</h5>
                 <ul>
-                  <li><i class="fas fa-check-double"></i> Over 37 lectures and 55.5 hours of content!</li>
-                  <li><i class="fas fa-check-double"></i> Testing Training Included.</li>
-                  <li><i class="fas fa-check-double"></i> Best suitable for beginners to advanced level users and who
+                  <li><i class="fas fa-check-double icon-courses"></i> Over 37 lectures and 55.5 hours of content!</li>
+                  <li><i class="fas fa-check-double icon-courses"></i> Testing Training Included.</li>
+                  <li><i class="fas fa-check-double icon-courses"></i> Best suitable for beginners to advanced level
+                    users and who
                     learn faster when demonstrated.</li>
-                  <li><i class="fas fa-check-double"></i> Course content designed by considering current software
+                  <li><i class="fas fa-check-double icon-courses"></i> Course content designed by considering current
+                    software
                     testing
                     technology and the job market.</li>
-                  <li><i class="fas fa-check-double"></i> Practical assignments at the end of every session.</li>
-                  <li><i class="fas fa-check-double"></i> Practical learning experience with live project work and
+                  <li><i class="fas fa-check-double icon-courses"></i> Practical assignments at the end of every
+                    session.</li>
+                  <li><i class="fas fa-check-double icon-courses"></i> Practical learning experience with live project
+                    work and
                     examples.</li>
-                  <li><i class="fas fa-check-double"></i> Unlimited Resourses</li>
+                  <li><i class="fas fa-check-double icon-courses"></i> Unlimited Resourses</li>
                 </ul>
               </div>
               <div id="curriculum" *ngSwitchCase="2" class="tab-content">
@@ -103,15 +108,15 @@
                   spirit
                   an mother. Amounted old strictly but marianne admitted. People former is remove remain as.
                 </p>
-                <h5>LIST OF COURSES</h5>
+                <h5 class="title-list-panel">LIST OF COURSES</h5>
                 <div class="courses-list-item">
                   <div class="panel-heading-courses">
-                    <h5><a href=""></a>Java programming</h5>
+                    <h5><a class="list-courses" (click)="showProgramJava=!showProgramJava">Java programming</a></h5>
                   </div>
                   <div class="panel-content">
                     <div class="panel-content-body">
-                      <ul>
-                        <li>
+                      <ul class="panel-content-item" *ngIf="showProgramJava">
+                        <li class="panel-item">
                           <div class="item-name">
                             <i class="fas fa-play"></i>
                             <span>Lecture 1.1</span>
@@ -124,16 +129,16 @@
                             <a href="#">Preview</a>
                           </div>
                         </li>
-                        <li>
-                          <div class="item name">
+                        <li class="panel-item">
+                          <div class="item-name">
                             <i class="fas fa-file"></i>
                             <span>Lecture 1.2</span>
                           </div>
-                          <div class="item title">
+                          <div class="item-title">
                             <h5>Basic development</h5>
                           </div>
                           <div>
-                            <div class="item info">
+                            <div class="item-info">
                               <span>Duration: 3 hours 15 min</span>
                               <a href="#">Preview</a>
                             </div>
@@ -142,10 +147,13 @@
                       </ul>
                     </div>
                   </div>
+                  <div class="panel-heading-courses">
+                    <h5><a class="list-courses" (click)="showProgramPhp=!showProgramPhp">php programming</a></h5>
+                  </div>
                   <div class="panel-content">
                     <div class="panel-content-body">
-                      <ul>
-                        <li>
+                      <ul class="panel-content-item" *ngIf="showProgramPhp">
+                        <li class="panel-item">
                           <div class="item-name">
                             <i class="fas fa-play"></i>
                             <span>Lecture 1.1</span>
@@ -158,16 +166,16 @@
                             <a href="#">Preview</a>
                           </div>
                         </li>
-                        <li>
-                          <div class="item name">
+                        <li class="panel-item">
+                          <div class="item-name">
                             <i class="fas fa-file"></i>
                             <span>Lecture 1.2</span>
                           </div>
-                          <div class="item title">
+                          <div class="item-title">
                             <h5>Basic development</h5>
                           </div>
                           <div>
-                            <div class="item info">
+                            <div class="item-info">
                               <span>Duration: 2 hours 12 min</span>
                               <a href="#">Preview</a>
                             </div>
@@ -182,24 +190,24 @@
                 <div class="advisor-list-item" *ngFor="let item of items">
                   <div class="item">
                     <div class="thumb">
-                      <img src="{{item.img}}" alt="">
+                      <img class="img-item-advisor" src="{{item.img}}" alt="">
                     </div>
                     <div class="info">
-                      <h5>{{item.name}}</h5>
-                      <span>{{item.position}}</span>
-                      <p>{{item.des}}</p>
-                      <ul>
-                        <li>
-                          <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <h5 class="name-advisor">{{item.name}}</h5>
+                      <span class="position-advisor">{{item.position}}</span>
+                      <p class="text-advisor">{{item.des}}</p>
+                      <ul class="icon-contact">
+                        <li class="mg-icon-contact">
+                          <a class="icon-contact-detail" href="#"><i class="fab fa-facebook-f"></i></a>
                         </li>
-                        <li>
-                          <a href="#"><i class="fab fa-twitter"></i></a>
+                        <li class="mg-icon-contact">
+                          <a class="icon-contact-detail" href="#"><i class="fab fa-twitter"></i></a>
                         </li>
-                        <li>
-                          <a href="#"><i class="fab fa-dribbble"></i></a>
+                        <li class="mg-icon-contact">
+                          <a class="icon-contact-detail" href="#"><i class="fab fa-dribbble"></i></a>
                         </li>
-                        <li>
-                          <a href="#"><i class="fab fa-youtube"></i></a>
+                        <li class="mg-icon-contact">
+                          <a class="icon-contact-detail" href="#"><i class="fab fa-youtube"></i></a>
                         </li>
                       </ul>
                     </div>
@@ -208,8 +216,8 @@
               </div>
               <div id="reviews" *ngSwitchCase="4" class="tab-content">
                 <div class="advisor-rating-list">
-                  <h5>Average Rating</h5>
-                  <div class="item rating">
+                  <h5 class="title-rating">Average Rating</h5>
+                  <div class="item-rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -218,30 +226,39 @@
                     <span>4.5 (16)</span>
                   </div>
                   <ul>
-                    <li>
-                      <span>5 Star</span>
-                      <div class="rating-bar"></div>
-                      <span>13</span>
+                    <li class="list-rating">
+                      <div class="rating-bar">
+                        <span>5 Star</span>
+                        <span>13</span>
+                      </div>
                     </li>
-                    <li>
-                      <span>4 Star</span>
-                      <div class="rating-bar"></div>
-                      <span>1</span>
+                    <li class="list-rating">
+
+                      <div class="rating-bar">
+                        <span>4 Star</span>
+                        <span>1</span>
+                      </div>
                     </li>
-                    <li>
-                      <span>3 Star</span>
-                      <div class="rating-bar"></div>
-                      <span>0</span>
+                    <li class="list-rating">
+
+                      <div class="rating-bar">
+                        <span>3 Star</span>
+                        <span>0</span>
+                      </div>
                     </li>
-                    <li>
-                      <span>2 Star</span>
-                      <div class="rating-bar"></div>
-                      <span>1</span>
+                    <li class="list-rating">
+
+                      <div class="rating-bar">
+                        <span>2 Star</span>
+                        <span>1</span>
+                      </div>
                     </li>
-                    <li>
-                      <span>1 Star</span>
-                      <div class="rating-bar"></div>
-                      <span>0</span>
+                    <li class="list-rating">
+
+                      <div class="rating-bar">
+                        <span>1 Star</span>
+                        <span>0</span>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -290,18 +307,19 @@
                   </div>
                   <div class="info">
                     <h5>
-                      <a href="#">Profession paython learing</a>
+                      <a class="text-info-post" href="#">Profession paython learing</a>
                     </h5>
                     <div class="rating">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star-half-alt"></i>
+                      <i class="fas fa-star icon-courses"></i>
+                      <i class="fas fa-star icon-courses"></i>
+                      <i class="fas fa-star icon-courses"></i>
+                      <i class="fas fa-star icon-courses"></i>
+                      <i class="fas fa-star-half-alt icon-courses"></i>
                       <span>4.5 (23,890)</span>
                     </div>
                     <div class="meta">
-                      <i class="fas fa-user"></i> By <a href="#">Drup Paul</a>
+                      <i class="fas fa-user"></i><a style="text-transform: uppercase; color: #666666" href="#">By Drup
+                        Paul</a>
                     </div>
                   </div>
                 </div>

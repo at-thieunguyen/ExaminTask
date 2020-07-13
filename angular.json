@@ -67,7 +67,7 @@
                 }
               ]
             },
-            "stragging": {
+            "staging": {
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -105,6 +105,9 @@
           "configurations": {
             "production": {
               "browserTarget": "Examin:build:production"
+            },
+            "es5": {
+              "browserTarget": "Examin:build:es5"
             }
           }
         },
