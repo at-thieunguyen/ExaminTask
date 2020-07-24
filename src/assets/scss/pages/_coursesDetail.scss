@@ -82,14 +82,31 @@
       }
       .panel-heading-courses {
         @include pxRem(padding, 20);
-        @include pxRem(margin-bottom, 15);
+        @include pxRem(margin-top, 15);
         background: $white;
         display: block;
         border: 1px solid #e7e7e7;
+        &.iconShow {
+          &::after {
+            @include pxRem(top, 17);
+            @include pxRem(font-size, 20);
+            @include pxRem(right, 10);
+            content: "\f107";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            color: $primary;
+          }
+        }
         &:hover {
           cursor: pointer;
         }
         .list-courses {
+          @include pxRem(font-size, 14);
+          display: flex;
+          justify-content: space-between;
+          color: $black;
+          font-weight: 600;
+          text-transform: uppercase;
           &::after {
             content: "\f105";
             font-family: "Font Awesome 5 Free";
@@ -104,6 +121,26 @@
           display: flex;
           justify-content: space-between;
           background: #f7f7f7;
+          .item-name {
+            display: flex;
+            align-items: center;
+            .title-panel {
+              @include pxRem(font-size, 15);
+            }
+            .lecture-name {
+              @include pxRem(padding-right, 20);
+            }
+          }
+          .btn-panel {
+            @include pxRem(margin-left, 10);
+            @include pxRem(border-radius, 5);
+            @include pxRem(font-size, 12);
+            @include pxRem(padding, 6 15);
+            background: $primary;
+            color: $white;
+            font-weight: 600;
+            text-transform: capitalize;
+          }
         }
         .panel-content-item {
           @include pxRem(padding, 20);
@@ -114,16 +151,6 @@
         @include pxRem(margin, 15 0);
         font-weight: 600;
         text-transform: uppercase;
-        &::after {
-          @include pxRem(top, 17);
-          @include pxRem(font-size, 20);
-          @include pxRem(right, 10);
-          content: "\f107";
-          position: absolute;
-          font-family: "Font Awesome 5 Free";
-          font-weight: 900;
-          color: #002147;
-        }
       }
     }
     .img-courses-detail {
@@ -175,6 +202,7 @@
   .title-post {
     @include pxRem(margin-bottom, 20);
     @include pxRem(padding-bottom, 15);
+    @include pxRem(margin-top, 20);
     display: inline-block;
     font-weight: 600;
     text-transform: uppercase;
@@ -232,4 +260,7 @@
       }
     }
   }
+}
+.active {
+  background-color: $secondary;
 }

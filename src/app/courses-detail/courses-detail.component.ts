@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HideShowService } from '../hide-show.service';
 
 @Component({
   selector: 'app-courses-detail',
@@ -6,13 +7,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./courses-detail.component.scss']
 })
 export class CoursesDetailComponent implements OnInit {
-
-  constructor() { }
+ 
+  constructor(private serviceShow: HideShowService) { }
+  isShow: boolean = true;
   showProgramJava: boolean = false;
   showProgramPhp: boolean = false;
   step = 1;
 
   ngOnInit(): void {
+    let header = document.getElementById("btnTab");
+    let btns = header.getElementsByClassName("btn");
+    for (let i = 0; i < btns.length; i++) {
+      btns[i].addEventListener('click', function () {
+        let current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    this.serviceShow.changeStatus(this.isShow);
+  }
+  ngOnDetroy() {
+    this.serviceShow.changeStatus(!this.isShow);
   }
   items = [
     {

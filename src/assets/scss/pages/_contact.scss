@@ -1,0 +1,42 @@
+.contact-info-area {
+  @include pxRem(padding-top, 80);
+  @include pxRem(padding-bottom, 80);
+  .contact-info {
+    @include pxRem(padding-bottom, 50);
+    @include pxRem(margin-bottom, 50);
+    border-bottom: 1px solid #e7e7e7;
+    .item {
+      @include pxRem(padding, 50 30);
+      text-align: center;
+      box-shadow: 0 0 10px #cccccc;
+      .info {
+        @include pxRem(margin-top, 20);
+        .title-contact {
+          @include pxRem(margin-bottom, 10);
+          @include pxRem(font-size, 18);
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+      }
+      .icon {
+        @include pxRem(font-size, 60);
+      }
+    }
+  }
+  .map-form {
+    .gg-map {
+      @include pxRem(height, 465);
+      width: 100%;
+    }
+    .title-map {
+      @include pxRem(margin-bottom, 15);
+      font-weight: 600;
+    }
+    .form-area {
+      @include pxRem(height, 140);
+    }
+  }
+}
+.text-form {
+  @include pxRem(margin-bottom, 15);
+}

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HideShowService } from '../hide-show.service';
 
 @Component({
   selector: 'app-courses',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./courses.component.scss']
 })
 export class CoursesComponent implements OnInit {
+  isShow: boolean = true;
 
-  constructor() { }
+  constructor(private serviceShow: HideShowService) { }
 
   ngOnInit(): void {
+    this.serviceShow.changeStatus(this.isShow);
+  }
+
+  ngOnDetroy() {
+    this.serviceShow.changeStatus(!this.isShow);
   }
   slides = [
     {

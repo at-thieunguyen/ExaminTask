@@ -54,8 +54,8 @@
               </div>
             </div>
             <div class="tab-info">
-              <ul class="btn-tab">
-                <li class="tab-link"><button class="btn btn-tab-content" (click)="step = 1;">Overview</button></li>
+              <ul class="btn-tab" id="btnTab">
+                <li class="tab-link"><button class="btn btn-tab-content active" (click)="step = 1;">Overview</button></li>
                 <li class="tab-link"><button class="btn btn-tab-content" (click)="step = 2;">Curriculum</button></li>
                 <li class="tab-link"><button class="btn btn-tab-content" (click)="step = 3;">Advisor</button></li>
                 <li class="tab-link"><button class="btn btn-tab-content" (click)="step = 4;">reviews</button></li>
@@ -118,29 +118,25 @@
                       <ul class="panel-content-item" *ngIf="showProgramJava">
                         <li class="panel-item">
                           <div class="item-name">
-                            <i class="fas fa-play"></i>
-                            <span>Lecture 1.1</span>
-                          </div>
-                          <div class="item-title">
-                            <h5>Introduction of java</h5>
+                            <i class="fas fa-play icon-courses"></i>
+                            <span class="lecture-name">Lecture 1.1</span>
+                            <h5 class="title-panel">Introduction of java</h5>
                           </div>
                           <div class="item-info">
                             <span>Duration: 1 hours 30 min</span>
-                            <a href="#">Preview</a>
+                            <a class="btn-panel" href="#">Preview</a>
                           </div>
                         </li>
                         <li class="panel-item">
                           <div class="item-name">
-                            <i class="fas fa-file"></i>
-                            <span>Lecture 1.2</span>
-                          </div>
-                          <div class="item-title">
-                            <h5>Basic development</h5>
+                            <i class="fas fa-file icon-courses"></i>
+                            <span class="lecture-name">Lecture 1.2</span>
+                            <h5 class="title-panel">Basic development</h5>
                           </div>
                           <div>
                             <div class="item-info">
                               <span>Duration: 3 hours 15 min</span>
-                              <a href="#">Preview</a>
+                              <a class="btn-panel" href="#">Preview</a>
                             </div>
                           </div>
                         </li>
@@ -155,29 +151,25 @@
                       <ul class="panel-content-item" *ngIf="showProgramPhp">
                         <li class="panel-item">
                           <div class="item-name">
-                            <i class="fas fa-play"></i>
-                            <span>Lecture 1.1</span>
-                          </div>
-                          <div class="item-title">
-                            <h5>Introduction of java</h5>
+                            <i class="fas fa-play icon-courses"></i>
+                            <span class="lecture-name">Lecture 1.1</span>
+                            <h5 class="title-panel">Introduction of java</h5>
                           </div>
                           <div class="item-info">
                             <span>Duration: 1 hours 30 min</span>
-                            <a href="#">Preview</a>
+                            <a class="btn-panel" href="#">Preview</a>
                           </div>
                         </li>
                         <li class="panel-item">
                           <div class="item-name">
-                            <i class="fas fa-file"></i>
-                            <span>Lecture 1.2</span>
-                          </div>
-                          <div class="item-title">
-                            <h5>Basic development</h5>
+                            <i class="fas fa-file icon-courses"></i>
+                            <span class="lecture-name">Lecture 1.2</span>
+                            <h5 class="title-panel">Basic development</h5>
                           </div>
                           <div>
                             <div class="item-info">
                               <span>Duration: 2 hours 12 min</span>
-                              <a href="#">Preview</a>
+                              <a class="btn-panel" href="#">Preview</a>
                             </div>
                           </div>
                         </li>

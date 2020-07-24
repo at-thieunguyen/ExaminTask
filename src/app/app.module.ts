@@ -22,6 +22,13 @@ import { BlogComponent } from './blog/blog.component';
 import { CoursesComponent } from './courses/courses.component';
 import { HomeComponent } from './home/home.component';
 import { CoursesDetailComponent } from './courses-detail/courses-detail.component';
+import { ContactComponent } from './contact/contact.component';
+import { AdvisorComponent } from './advisor/advisor.component';
+import { AdvisorDetailComponent } from './advisor-detail/advisor-detail.component';
+import { FormRegisterComponent } from './form-register/form-register.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
+import { FormLoginComponent } from './form-login/form-login.component';
 
 @NgModule({
   declarations: [
@@ -42,13 +49,20 @@ import { CoursesDetailComponent } from './courses-detail/courses-detail.componen
     BlogComponent,
     CoursesComponent,
     HomeComponent,
-    CoursesDetailComponent
+    CoursesDetailComponent,
+    ContactComponent,
+    AdvisorComponent,
+    AdvisorDetailComponent,
+    FormRegisterComponent,
+    FormLoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CarouselModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    BrowserAnimationsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

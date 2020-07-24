@@ -1,0 +1,42 @@
+.form-popup {
+  @include pxRem(padding, 50 30);
+  @include pxRem(width, 600);
+  margin: auto;
+  position: relative;
+  .login-social {
+    @include pxRem(padding-right, 30);
+    .social {
+      display: flex;
+      .icon-form {
+        @include pxRem(height, 80);
+        @include pxRem(line-height, 80);
+        @include pxRem(width, 50);
+        text-align: center;
+        color: $white;
+        display: inline-block;
+      }
+    }
+  }
+  .login-custom {
+    @include pxRem(padding-left, 30);
+    border-left: 1px solid #e7e7e7;
+  }
+  .closeForm {
+    @include pxRem(font-size, 28);
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-decoration: none;
+    text-align: center;
+    border: 0;
+    color: $red;
+    background: transparent;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+.mg-right {
+  @include pxRem(margin-right, 5);
+}

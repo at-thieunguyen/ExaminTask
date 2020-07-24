@@ -8,6 +8,9 @@
   text-transform: uppercase;
   border-radius: inherit;
   cursor: pointer;
+  &:focus {
+    outline: none !important;
+  }
 }
 .btn-mg {
   @include pxRem(margin-right, 10px)

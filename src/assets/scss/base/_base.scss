@@ -10,6 +10,7 @@ body {
   background-color: #ffffff;
   a {
     text-decoration: none;
+    color: $primary;
   }
 }
 @media screen and (min-width: 320px) {
@@ -63,6 +64,9 @@ h6 {
   font-family: "Poppins", sans-serif;
   letter-spacing: 0;
   margin: 0;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-transform: capitalize;
 }
 h1 {
   font-size: 3.5rem;

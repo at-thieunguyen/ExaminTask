@@ -1,50 +1,50 @@
 .advisor-area {
   background-color: #f9f9f9;
-}
-.advisor-slide {
-  @include pxRem(margin, 16);
-  .info-box {
-    box-shadow: 0 0 10px #cccccc;
-    img {
-      width: 100%;
-    }
-    .info-title {
-      @include pxRem(padding, 25);
-      background: #ffffff;
-      position: relative;
-      text-align: center;
-      width: 100%;
-    }
-    .social {
-      @include pxRem(margin-top, 15);
-      @include pxRem(padding-top, 15);
-      border-top: 1px solid #e7e7e7;
-      position: relative;
-      ul {
-        display: flex;
-        justify-content: center;
-        li {
-          @include pxRem(line-height, 40);
-          @include pxRem(margin, 5 3 0);
-          @include pxRem(width, 40);
-          @include pxRem(border-radius, 5);
-        }
-        i {
-          color: #ffffff;
-        }
-        .facebook {
-          background-color: #3b5998;
-        }
-        .twitter {
-          background-color: #1da1f2;
-        }
-        .pinterest {
-          background-color: #bd081c;
-        }
-        .linkedin {
-          background-color: #0077b5;
+  .advisor-slide {
+    @include pxRem(margin, 16);
+    .info-box {
+      box-shadow: 0 0 10px #cccccc;
+      img {
+        width: 100%;
+      }
+      .info-title {
+        @include pxRem(padding, 25);
+        background: #ffffff;
+        position: relative;
+        text-align: center;
+        width: 100%;
+      }
+      .social {
+        @include pxRem(margin-top, 15);
+        @include pxRem(padding-top, 15);
+        border-top: 1px solid #e7e7e7;
+        position: relative;
+        ul {
+          display: flex;
+          justify-content: center;
+          li {
+            @include pxRem(line-height, 40);
+            @include pxRem(margin, 5 3 0);
+            @include pxRem(width, 40);
+            @include pxRem(border-radius, 5);
+          }
+          i {
+            color: #ffffff;
+          }
         }
       }
     }
   }
+}
+.facebook {
+  background-color: #3b5998;
+}
+.twitter {
+  background-color: #1da1f2;
+}
+.pinterest {
+  background-color: #bd081c;
+}
+.linkedin {
+  background-color: #0077b5;
 }

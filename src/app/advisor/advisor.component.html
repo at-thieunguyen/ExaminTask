@@ -1,0 +1,89 @@
+<div class="breadcrumb-area shadow bg-fixed banner-courses bg-cover"
+  style="background-image: url('./assets/images/bannerAdvisor.jpg')">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 courses-general">
+        <h1 class="title-banner">Contact us</h1>
+        <ul class="breadcrumb-courses">
+          <li class="breadcrumb-item-courses"><a class="text-breadcrumb" href=""><i
+                class="fas fa-home icon-courses"></i>Home</a></li>
+          <li class="breadcrumb-item-courses"><a class="text-breadcrumb" href="#">Page</a></li>
+          <li class="breadcrumb-item-courses"><a class="text-breadcrumb" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="advisor-info-area">
+  <div class="container">
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+      <div class="row" ngxSlickItem *ngFor="let slide of slides">
+        <div class="col-12">
+          <div class="advisor-slide">
+            <div class="item">
+              <div class="thumb">
+                <div class="info-box">
+                  <img src="{{slide.img}}" alt="">
+                  <div class="info-title">
+                    <h4>{{slide.name}}</h4>
+                    <span class="title-advisor">Senior Developer</span>
+                  </div>
+                  <div class="overlay">
+                    <div class="box-overlay">
+                      <h4 class="title-box-ovelay">About Sufia Nilla</h4>
+                      <p>
+                        Great explorer of the truth, the master-builder of human happiness.
+                      </p>
+                      <a class="title-advisor" href="">Read More</a>
+                      <div class="social">
+                        <ul class="social-list-item">
+                          <li class="social-item">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                          </li>
+                          <li class="social-item">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                          </li>
+                          <li class="social-item">
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                          </li>
+                          <li class="social-item">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ngx-slick-carousel>
+  </div>
+  <app-testimonials></app-testimonials>
+  <section class="client-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-medium-4 col-large-4 col-smallest-12 info">
+          <h4>Our largest education campus</h4>
+          <p>
+            Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham
+            melancholy son themselves.
+          </p>
+        </div>
+        <div class="col-medium-8 col-large-8 col-smallest-12">
+          <div class="client-logo-carousel">
+            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+              <div class="client-item" ngxSlickItem *ngFor="let logoCarousel of clientLogoCarousel">
+                <div class="single-item">
+                  <a href="#"><img src="{{logoCarousel.img}}" alt=""></a>
+                </div>
+              </div>
+            </ngx-slick-carousel>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

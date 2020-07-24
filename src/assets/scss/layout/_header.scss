@@ -54,6 +54,72 @@
   .navbar-header {
     @include pxRem(padding, 18 15);
     @include pxRem(margin-left, -15);
+    .side {
+      // @include pxRem(right, 0);
+      @include pxRem(top, 0);
+      @include pxRem(width, 400px);
+      @include pxRem(padding, 50px);
+      position: fixed;
+      height: 100%;
+      background: $white;
+      overflow: auto;
+      transition: right 0.5s;
+      right: -120%;
+      box-shadow: 0 15px 40px -5px rgba(0, 0, 0, 0.1);
+      &.move {
+        right: 0;
+      }
+      .title-menu-side {
+        @include pxRem(margin-bottom, 15);
+        @include pxRem(padding-bottom, 15);
+        position: relative;
+        text-transform: uppercase;
+        font-weight: 600;
+        &::before {
+          @include pxRem(height, 2);
+          @include pxRem(left, 35);
+          @include pxRem(width, 10);
+          @include pxRem(bottom, 0);
+          background: $secondary;
+          content: "";
+          position: absolute;
+        }
+        &::after {
+          @include pxRem(height, 2);
+          @include pxRem(left, 0);
+          @include pxRem(bottom, 0);
+          @include pxRem(width, 30);
+          background: $secondary;
+          content: "";
+          position: absolute;
+        }
+      }
+      .close-menu-side {
+        @include pxRem(font-size, 20);
+        display: flex;
+        justify-content: flex-end;
+        color: $red;
+        cursor: pointer;
+      }
+      .avt-profile-side {
+        @include pxRem(height, 150);
+        @include pxRem(margin, 10 0 20);
+        @include pxRem(padding, 3);
+        @include pxRem(width, 150);
+        @include pxRem(border-radius, 10);
+        border: 2px solid #e7e7e7;
+      }
+      .list-item-side {
+        display: block;
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        margin-bottom: 15px;
+      }
+    }
+    .side-menu {
+      @include pxRem(font-size, 20);
+      cursor: pointer;
+    }
   }
   .navbar-collapse {
     justify-content: flex-end;
@@ -86,9 +152,35 @@
     }
   }
 }
-
+.link-social {
+  display: flex;
+  .icon-social {
+    @include pxRem(height, 45);
+    @include pxRem(width, 45);
+    @include pxRem(line-height, 45);
+    @include pxRem(margin, 5 5 0);
+    color: $white;
+    display: inline-block;
+    text-align: center;
+    i {
+      @include pxRem(margin-left, 5);
+    }
+  }
+  .bg-facebook {
+    background-color: #3b5998;
+  }
+  .bg-twitter {
+    background-color: #1da1f2;
+  }
+  .bg-pinterest {
+    background-color: #bd081c;
+  }
+  .bg-dribbble {
+    background-color: #ea4c89;
+  }
+}
 .img-logo-light {
-  height: 18px;
+  @include pxRem(height, 18);
 }
 .show {
   display: block;
@@ -104,8 +196,8 @@
   }
 }
 .nav-menu {
-  width: 700px;
+  @include pxRem(width, 700);
 }
 .pd-item {
-  padding: 25px ;
+  @include pxRem(padding, 25);
 }
