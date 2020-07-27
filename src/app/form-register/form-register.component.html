@@ -1,5 +1,5 @@
 <div class="container">
-  <form action="#" id="register-form" class="form-popup">
+  <form action="#" id="register-form" class="form-popup" [formGroup]="formRegister">
     <div class="row">
       <div class="col-md-4 login-social">
         <h4>Register with social</h4>
@@ -25,18 +25,55 @@
         <h4>Register with social</h4>
         <div class="form-register">
           <div class="form-group">
-            <input class="form-control" placeholder="Email*" type="email">
+            <input class="form-control" placeholder="Email*" type="email" formControlName="email" required>
+          </div>
+          <div class="notifi-alert-danger" *ngIf="
+              formRegister.controls.email.invalid &&
+              (formRegister.controls.email.touched ||
+                formRegister.controls.email.dirty)
+            ">
+            <p>
+              Email is required!!!
+            </p>
           </div>
           <div class="form-group">
-            <input class="form-control" placeholder="Username*" type="text">
+            <input class="form-control" placeholder="Username*" type="text" formControlName="userName" required>
+          </div>
+          <div class="notifi-alert-danger" *ngIf="
+              formRegister.controls.userName.invalid &&
+              (formRegister.controls.userName.touched ||
+                formRegister.controls.userName.dirty)
+            ">
+            <p>
+              Username is required!!!
+            </p>
           </div>
           <div class="form-group">
-            <input class="form-control" placeholder="Password*" type="password">
+            <input class="form-control" placeholder="Password*" type="password" formControlName="passWord" required>
+          </div>
+          <div class="notifi-alert-danger" *ngIf="
+              formRegister.controls.passWord.invalid &&
+              (formRegister.controls.passWord.touched ||
+                formRegister.controls.passWord.dirty)
+            ">
+            <p>
+              Password is required!!!
+            </p>
           </div>
           <div class="form-group">
-            <input class="form-control" placeholder="Repeat Password*" type="password">
+            <input class="form-control" placeholder="Repeat Password*" type="password" formControlName="repeatPassword"
+              required>
           </div>
-          <button class="btn btn-secondary">sign up</button>
+          <div class="notifi-alert-danger" *ngIf="
+              formRegister.controls.repeatPassword.invalid &&
+              (formRegister.controls.repeatPassword.touched ||
+                formRegister.controls.repeatPassword.dirty)
+            ">
+            <p>
+              ComfirmPassword is required!!!
+            </p>
+          </div>
+          <button class="btn btn-secondary" (click)="onRegister()">sign up</button>
           <p class="link-bottom">Are you a member? <a href="#">Login now</a></p>
         </div>
       </div>

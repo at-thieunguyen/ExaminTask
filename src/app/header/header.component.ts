@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HideShowService } from '../hide-show.service';
 import { FormRegisterComponent } from '../form-register/form-register.component';
-import { DialogService } from '../dialog.service';
-import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { FormLoginComponent } from '../form-login/form-login.component';
 
 @Component({
@@ -14,8 +13,6 @@ export class HeaderComponent implements OnInit {
 
   constructor(
     private serviceShow: HideShowService,
-   
-    private dialogService: DialogService,
     public dialog: MatDialog,) { }
   
   

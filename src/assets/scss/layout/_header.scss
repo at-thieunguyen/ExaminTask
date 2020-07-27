@@ -7,7 +7,7 @@
     @include pxRem(margin, 3 0);
     display: flex;
     justify-content: flex-end;
-    a {
+    .popup-with-form {
       @include pxRem(margin-left, 8);
       @include pxRem(padding, 8 25);
       @include pxRem(border-radius, 5);
@@ -16,6 +16,7 @@
       display: inline-block;
       font-weight: 600;
       text-decoration: none;
+      cursor: pointer;
       i {
         @include pxRem(padding, 4);
       }
