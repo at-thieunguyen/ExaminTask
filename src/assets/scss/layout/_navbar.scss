@@ -1,0 +1,52 @@
+.wrap-sticky {
+  position: relative;
+  .navbar {
+  }
+  .bootsnav {
+    position: absolute;
+    width: 100%;
+    background-color: $white;
+    z-index: 100;
+    .sticked {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #fff;
+    }
+  }
+}
+.navbar-general {
+  display: flex;
+  justify-content: space-between;
+  .navbar-header {
+    @include pxRem(padding, 18 15);
+    @include pxRem(margin-left, -15);
+  }
+  .collapse {
+    .navbar-item {
+      @include pxRem(padding, 30 15);
+      @include pxRem(font-size, 12);
+      display: flex;
+      justify-content: flex-end;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    li {
+      // @include pxRem(margin-right, 10px);
+    }
+    .navbar-link {
+      @include pxRem(padding, 36 11);
+      font-size: 13.2px !important;
+      color: #333333;
+      &::after {
+        @include pxRem(margin-left, 6);
+        @include pxRem(margin-top, 3);
+        content: "\f107";
+        font-family: "Font Awesome 5 Free";
+      }
+    }
+    .navbar-collapse {
+    }
+  }
+}

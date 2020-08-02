@@ -1,0 +1,67 @@
+<div class="breadcrumb-area shadow bg-fixed banner-courses bg-cover"
+  style="background-image: url('./assets/images/slide2.jpg')">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 courses-general">
+        <h1 class="title-banner">Courses</h1>
+        <ul class="breadcrumb-courses">
+          <li class="breadcrumb-item-courses"><a class="text-breadcrumb" href=""><i class="fas fa-home icon-courses"></i>Home</a></li>
+          <li class="breadcrumb-item-courses"><a class="text-breadcrumb" href="#">Page</a></li>
+          <li class="breadcrumb-item-courses"><a class="text-breadcrumb" href="#">Courses</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="default-padding">
+  <section class="popular-courses">
+    <div class="container">
+      <div class="popular-courses-item">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 col-lg-4" *ngFor="let slide of slides">
+            <div class="popular-item">
+              <div class="item">
+                <div class="thumb">
+                  <a href="#"><img class="popular-img" src="{{slide.img}}" alt=""></a>
+                  <div class="overlay">
+                    <a class="btn btn-secondary" href=""><i class="fas fa-chart-bar"></i>Enroll now</a>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="author-info">
+                    <div class="thumb">
+                      <a href=""><img src="{{slide.avt}}" alt=""></a>
+                    </div>
+                    <div class="orthers">
+                      <a href="#">{{slide.name}}</a>
+                      <div class="ratinng">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>4.9 (2,655)</span>
+                      </div>
+                    </div>
+                  </div>
+                  <h4><a href="#">{{slide.title}}</a></h4>
+                  <p>
+                    Would day nor ask walls known. But preserved advantage are but and certainty earnestly
+                    enjoyment.
+                  </p>
+                  <div class="bottom-info row">
+                    <ul>
+                      <li><i class="fas fa-user"></i>6,690 </li>
+                      <li><i class="fas fa-clock"></i> 16:00</li>
+                    </ul>
+                    <div class="price-text">{{slide.price}}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

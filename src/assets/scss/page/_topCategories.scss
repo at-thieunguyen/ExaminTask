@@ -1,0 +1,46 @@
+.top-categoris {
+  padding-bottom: 80px;
+}
+.top-cat-item {
+  .item {
+    @include pxRem(border-radius, 5);
+    background-size: cover;
+    &:hover {
+      a,
+      h4,
+      img {
+        color: #ffffff;
+      }
+    }
+    a {
+      @include pxRem(padding, 50 30);
+      @include pxRem(border-radius, 5);
+      box-shadow: 0 0 10px #cccccc;
+      display: flex;
+      position: relative;
+      z-index: 1;
+      background: #ffffff;
+      cursor: pointer;
+      &:hover {
+        text-decoration: none;
+        background: transparent;
+        transition: 0.5s;
+      }
+      img {
+        @include pxRem(width, 50);
+        @include pxRem(height, 50);
+      }
+      .info {
+        @include pxRem(padding-left, 15);
+      }
+    }
+    h4 {
+      @include pxRem(bottom, 10);
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+  }
+  .equal-height {
+    @include pxRem(margin-bottom, 30);
+  }
+}

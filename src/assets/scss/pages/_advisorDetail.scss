@@ -1,0 +1,93 @@
+.advisor-detail-area {
+  @include pxRem(padding-bottom, 80);
+  .main-content {
+    @include pxRem(padding-left, 35);
+  }
+  .des {
+    @include pxRem(padding, 30);
+    box-shadow: 0 0 10px #cccccc;
+    .title-advisor-detail {
+      color: $secondary;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .social {
+      @include pxRem(padding-top, 20);
+      @include pxRem(margin-top, 15);
+      border-top: 1px solid #e7e7e7;
+      display: flex;
+      .icon-item {
+        @include pxRem(height, 40);
+        @include pxRem(line-height, 40);
+        @include pxRem(margin-right, 3);
+        @include pxRem(width, 40);
+        border: 1px solid #e7e7e7;
+        display: inline-block;
+        text-align: center;
+        .fab {
+          @include pxRem(margin-left, 5);
+          color: $primary;
+        }
+      }
+    }
+  }
+  .img-advisor-detail {
+    max-width: 100%;
+  }
+  .tab-info {
+    @include pxRem(margin-bottom, 20);
+    .btn-tab {
+      display: flex;
+    }
+  }
+  .tab-content {
+    @include pxRem(margin-top, 25);
+    .contact-item {
+      @include pxRem(padding-bottom, 10);
+      @include pxRem(margin-bottom, 10);
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #e7e7e7;
+      text-transform: uppercase;
+    }
+    .table-responsive {
+      overflow-x: auto;
+      .table-courses {
+        width: 100%;
+        thead {
+          tr {
+            border-bottom: 1px solid #ddd;
+          }
+        }
+        tbody {
+          tr {
+            border-bottom: 1px solid #ddd;
+            &:nth-of-type(odd) {
+              background-color: #f9f9f9;
+            }
+          }
+        }
+        .title-table {
+          @include pxRem(padding, 8);
+        }
+
+        .content-table {
+          @include pxRem(padding, 15);
+          .text-advisor-detail {
+            &:hover {
+              color: $secondary;
+              transition: 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.line-bottom {
+  @include pxRem(margin-bottom, 10);
+  color: $grey;
+}
+.form-area {
+  @include pxRem(height, 140 !important);
+}

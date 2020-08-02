@@ -1,0 +1,74 @@
+.about-area {
+  @include pxRem(padding-top, 80);
+  @include pxRem(padding-bottom, 80);
+  .info {
+    h5 {
+      @include pxRem(font-size, 18);
+      @include pxRem(margin-bottom, 12);
+      color: $grey;
+      text-transform: uppercase;
+      font-weight: normal;
+    }
+    h3 {
+      @include pxRem(margin-bottom, 25);
+      @include pxRem(padding-bottom, 25);
+      &::before {
+        @include pxRem(width, 25);
+        @include pxRem(height, 25);
+        background: #ffb606;
+        bottom: 0;
+        content: "";
+        left: 0;
+        &::after {
+          @include pxRem(width, 40);
+          @include pxRem(height, 2px);
+          background: #ffb606;
+          bottom: 0;
+          left: 0;
+          content: "";
+        }
+      }
+    }
+    p {
+      @include pxRem(margin, 0 0 15);
+      color: $grey;
+    }
+  }
+  .title-about-info {
+    font-weight: 600;
+  }
+  .our-features {
+    @include pxRem(padding-top, 80);
+    .item-feature {
+      display: flex;
+      justify-content: flex-start;
+      .img-shield {
+        @include pxRem(padding-right, 15px);
+      }
+      .info-feature {
+        @include pxRem(padding, 10 0px);
+        h6,
+        a {
+          text-transform: uppercase;
+        }
+        a {
+          @include pxRem(font-size, 12 !important);
+          color: $grey;
+        }
+      }
+    }
+    .flaticon-faculty-shield {
+      width: 80px;
+    }
+    .item-mariner {
+      @include pxRem(padding, 50 30);
+      @include pxRem(margin-bottom, 15);
+      box-shadow: 0 0 10px #cccccc;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+.img-about {
+  max-width: 100%;
+}

@@ -1,0 +1,89 @@
+.btn {
+  @include pxRem(line-height, 26);
+  @include pxRem(font-size, 16);
+  @include pxRem(letter-spacing, 2);
+  @include pxRem(font-size, 14 !important);
+  display: inline-block;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: inherit;
+  cursor: pointer;
+  &:focus {
+    outline: none !important;
+  }
+}
+.btn-mg {
+  @include pxRem(margin-right, 10px)
+}
+.btn-md {
+  @include pxRem(margin-top, 16);
+  @include pxRem(padding, 10 40 10);
+}
+.btn-sm {
+  @include pxRem(margin-top, 16);
+  @include pxRem(padding, 7 32);
+  @include pxRem(font-size, 12 !important)
+}
+.btn-grey {
+  background-color: $gray;
+  border: 2px solid #e7e7e7;
+  color: $primary;
+  &:hover {
+    background-color: $white;
+    transition: 0.5s;
+  }
+}
+.btn-light {
+  background: transparent;
+  border: 2px solid $white;
+  color: $white;
+  &:hover {
+    background-color: $white;
+    color: $primary;
+    transition: 0.5s;
+  }
+}
+.btn-secondary {
+  background-color: $secondary;
+  color: #002147 !important;
+  border: 2px solid $secondary;
+  &:hover {
+    background: $hover-secondary;
+    border: 2px solid $hover-secondary;
+    color: $white !important;
+    transition: 0.5s;
+  }
+}
+.btn-primary {
+  background-color: $white;
+  color: $primary;
+  border: 2px solid $primary;
+  &:hover {
+    color: $white;
+    background-color: $primary;
+    transition: 0.5s;
+  }
+}
+.btn-tab-content {
+  background: #f4f4f4 none repeat scroll 0 0;
+    border: 1px solid #e7e7e7;
+    border-radius: inherit;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    padding: 10px 25px;
+    text-transform: uppercase;
+}
+.btn-dark {
+  background-color: $primary;
+  color: $white;
+  border: 2px solid $primary;
+  &:hover {
+    color: $primary;
+    background-color: $white;
+    transition: 0.5s;
+  }
+}
+.btn-bd {
+  border-radius: 30px;
+}

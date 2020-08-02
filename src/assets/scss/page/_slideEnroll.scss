@@ -1,0 +1,111 @@
+.slide-enroll {
+  @include pxRem(padding-top, 80);
+  &:focus {
+    outline: none;
+    cursor: grab;
+  }
+  .slide-enroll-item {
+    .img-enroll {
+      width: 100%;
+    }
+    .info {
+      h2 {
+        a {
+          color: $primary;
+          text-transform: capitalize;
+          text-decoration: none;
+          font-weight: 600;
+        }
+      }
+      h5 {
+        @include pxRem(margin, 15 0);
+        @include pxRem(font-size, 18);
+        color: $secondary;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      p {
+        @include pxRem(line-height, 26);
+        @include pxRem(margin, 15 0);
+        @include pxRem(font-size, 15);
+        color: $grey;
+        text-transform: none;
+        font-weight: 400;
+      }
+    }
+    .thumb {
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      .live-view {
+        @include pxRem(right, 15);
+        @include pxRem(top, 15);
+        display: block;
+        position: absolute;
+        .view-camera,
+        .view-video {
+          @include pxRem(margin-left, 15);
+          @include pxRem(font-size, 20);
+          display: inline-block;
+          color: $white;
+        }
+      }
+    }
+    .info {
+      h3 {
+        @include pxRem(font-size, 20);
+        @include pxRem(margin-top, 25);
+        @include pxRem(margin-bottom, 15);
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      .bottom-info {
+        @include pxRem(margin-top, 25);
+        border-top: 1px solid #e7e7e7;
+        .item {
+          border-right: 1px solid #e7e7e7;
+          display: inline-block;
+          margin-right: 30px;
+          padding-right: 30px;
+          padding-top: 15px;
+          &:last-child {
+            border: medium none;
+            margin: 0;
+          }
+          h4 {
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+          }
+          a {
+            color: #666666;
+            font-family: "Poppins", sans-serif;
+            text-transform: uppercase;
+          }
+          i {
+            color: $secondary;
+          }
+        }
+      }
+      ul {
+        li {
+          display: block;
+          margin-bottom: 8px;
+          text-transform: capitalize;
+          i {
+            color: $secondary;
+          }
+          span {
+            @include pxRem(padding-left, 10);
+            @include pxRem(font-size, 14);
+            color: $grey;
+          }
+        }
+      }
+    }
+  }
+}
+.btn-slick {
+  text-align: center;
+}

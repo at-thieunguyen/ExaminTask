@@ -1,0 +1,208 @@
+.background-dark {
+  background-color: $primary;
+}
+.top-navbar {
+  @include pxRem(padding, 11 0);
+  .user-login {
+    @include pxRem(margin, 3 0);
+    display: flex;
+    justify-content: flex-end;
+    .popup-with-form {
+      @include pxRem(margin-left, 8);
+      @include pxRem(padding, 8 25);
+      @include pxRem(border-radius, 5);
+      background: $secondary;
+      color: $primary;
+      display: inline-block;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      i {
+        @include pxRem(padding, 4);
+      }
+    }
+  }
+  .box-contact {
+    display: flex;
+    .box-contact-item {
+      @include pxRem(margin-right, 18);
+      @include pxRem(padding-right, 20);
+      @include pxRem(line-height, 24);
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+      font-family: "Poppins", sans-serif;
+      color: $white;
+      span {
+        display: block;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      &:last-child {
+        border: medium none;
+        margin: 0;
+      }
+    }
+    i {
+      @include pxRem(margin-right, 6);
+    }
+  }
+}
+.page-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: $white;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  .navbar-header {
+    @include pxRem(padding, 18 15);
+    @include pxRem(margin-left, -15);
+    .side {
+      // @include pxRem(right, 0);
+      @include pxRem(top, 0);
+      @include pxRem(width, 400px);
+      @include pxRem(padding, 50px);
+      position: fixed;
+      height: 100%;
+      background: $white;
+      overflow: auto;
+      transition: right 0.5s;
+      right: -120%;
+      box-shadow: 0 15px 40px -5px rgba(0, 0, 0, 0.1);
+      &.move {
+        right: 0;
+      }
+      .title-menu-side {
+        @include pxRem(margin-bottom, 15);
+        @include pxRem(padding-bottom, 15);
+        position: relative;
+        text-transform: uppercase;
+        font-weight: 600;
+        &::before {
+          @include pxRem(height, 2);
+          @include pxRem(left, 35);
+          @include pxRem(width, 10);
+          @include pxRem(bottom, 0);
+          background: $secondary;
+          content: "";
+          position: absolute;
+        }
+        &::after {
+          @include pxRem(height, 2);
+          @include pxRem(left, 0);
+          @include pxRem(bottom, 0);
+          @include pxRem(width, 30);
+          background: $secondary;
+          content: "";
+          position: absolute;
+        }
+      }
+      .close-menu-side {
+        @include pxRem(font-size, 20);
+        display: flex;
+        justify-content: flex-end;
+        color: $red;
+        cursor: pointer;
+      }
+      .avt-profile-side {
+        @include pxRem(height, 150);
+        @include pxRem(margin, 10 0 20);
+        @include pxRem(padding, 3);
+        @include pxRem(width, 150);
+        @include pxRem(border-radius, 10);
+        border: 2px solid #e7e7e7;
+      }
+      .list-item-side {
+        display: block;
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        margin-bottom: 15px;
+      }
+    }
+    .side-menu {
+      @include pxRem(font-size, 20);
+      cursor: pointer;
+    }
+  }
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+}
+
+.header-top {
+  @include pxRem(padding, 8 0);
+  background-color: #1b263a;
+}
+.nav-item {
+  .dropdown-toggle {
+    font-weight: 600;
+  }
+  .dropdown-item {
+    @include pxRem(padding, 10 30);
+    border-bottom: 1px solid #e7e7e7;
+  }
+  a {
+    @include pxRem(padding, 20 10);
+    color: #3e3e3e;
+    font-size: 13.5px;
+    i {
+      @include pxRem(font-size, 16);
+    }
+    &:hover {
+      color: $secondary;
+      text-decoration: none;
+      transition: 0.5s;
+    }
+  }
+}
+.link-social {
+  display: flex;
+  .icon-social {
+    @include pxRem(height, 45);
+    @include pxRem(width, 45);
+    @include pxRem(line-height, 45);
+    @include pxRem(margin, 5 5 0);
+    color: $white;
+    display: inline-block;
+    text-align: center;
+    i {
+      @include pxRem(margin-left, 5);
+    }
+  }
+  .bg-facebook {
+    background-color: #3b5998;
+  }
+  .bg-twitter {
+    background-color: #1da1f2;
+  }
+  .bg-pinterest {
+    background-color: #bd081c;
+  }
+  .bg-dribbble {
+    background-color: #ea4c89;
+  }
+}
+.img-logo-light {
+  @include pxRem(height, 18);
+}
+.show {
+  display: block;
+}
+.dropdown:hover {
+  .dropdown-menu {
+    display: block;
+  }
+}
+.dropdown {
+  .dropdown-toggle:active {
+    pointer-events: none;
+  }
+}
+.nav-menu {
+  @include pxRem(width, 700);
+}
+.pd-item {
+  @include pxRem(padding, 25);
+}
+.header-text {
+  @include pxRem(margin-top, 10);
+  color: $white;
+}

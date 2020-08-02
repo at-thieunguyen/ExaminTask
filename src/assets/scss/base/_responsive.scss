@@ -1,0 +1,119 @@
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .bottom-info, .contact-info {
+    .item {
+      border-bottom: 1px solid #e7e7e7;
+      display: block;
+      margin-bottom: 15px;
+      margin-right: 0;
+      padding: 0 0 15px;
+    }
+  }
+  .top-navbar {
+    display: none !important;
+  }
+  .register-area {
+    .img-res {
+      text-align: center;
+    }
+  }
+  .fun-factor-area {
+    .fun-fact {
+      margin-bottom: 20px;
+    }
+  }
+  .info-author {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .item-general {
+      @include pxRem(margin-bottom, 15);
+      @include pxRem(padding-bottom, 15);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-left: none;
+      border-bottom: 1px dashed #999999;
+      margin-left: 0;
+    }
+  }
+  .btn-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .tab-link {
+      width: 100%;
+      .btn-tab-content {
+        width: 100%;
+      }
+    }
+  }
+  html {
+    font-size: 6px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 768px) {
+}
+.top-categoris {
+  .top-categories-info {
+    display: flex;
+    justify-content: center;
+  }
+}
+.client-area {
+  .info {
+    text-align: center;
+  }
+}
+.footer-bottom,
+.img-register,
+.student-text {
+  text-align: center;
+}
+html {
+  font-size: 12px;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .fun-factor-area {
+    .fun-fact {
+      margin-bottom: 20px;
+    }
+  }
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 960px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}

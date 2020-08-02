@@ -1,0 +1,55 @@
+.register-area {
+  @include pxRem(padding-top, 80);
+  background-color: #f9f9f9;
+  .img-register {
+    max-width: 100%;
+  }
+}
+.form-group {
+  @include pxRem(margin-bottom, 15);
+  .form-control {
+    @include pxRem(padding, 6 12);
+    @include pxRem(height, 34);
+    @include pxRem(font-size, 14);
+    @include pxRem(min-height, 50);
+    line-height: 1.5;
+    width: 100%;
+    border: 1px solid #e7e7e7;
+    border-radius: inherit;
+    box-shadow: inherit;
+    color: $grey;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+.register-title {
+  @include pxRem(margin-bottom, 15);
+  @include pxRem(padding-bottom, 20);
+  @include pxRem(font-size, 24);
+  position: relative;
+  font-weight: 600;
+  text-transform: uppercase;
+  &::before {
+    background: $secondary;
+    bottom: 0;
+    content: “”;
+    height: 2px;
+    position: absolute;
+    width: 40px;
+    z-index: 1;
+  }
+  &::after {
+    background: $secondary;
+    bottom: 0;
+    content: “”;
+    height: 2px;
+    position: absolute;
+    left: 45px;
+    margin: 0;
+    width: 20px;
+  }
+}
+.register-text {
+  @include pxRem(margin-bottom, 15);
+}

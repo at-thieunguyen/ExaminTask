@@ -1,0 +1,10 @@
+%clr {
+  &::after {
+    display: table;
+    content: '';
+    clear: both;
+  }
+}
+.display {
+  display: flex;
+}

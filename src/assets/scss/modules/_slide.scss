@@ -1,0 +1,40 @@
+.slide-set-m {
+  .carousel-slide {
+    position: relative;
+    width: 100%;
+    .content-box-cell {
+      position: absolute;
+      top: 40%;
+      z-index: 10;
+    }
+  }
+  .banner {
+    height: 778px;
+  }
+  .banner-text {
+    color: $white;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+.bg-fixed {
+  background-attachment: fixed;
+}
+.shadow {
+  position: relative;
+  z-index: 1;
+  &::after {
+    position: absolute;
+    background-color: #002147;
+    content: "";
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+  }
+}
+.bg-cover {
+  background-position: center;
+  background-size: cover;
+}

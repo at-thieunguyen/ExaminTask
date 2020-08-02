@@ -1,0 +1,96 @@
+.event-area {
+  @include pxRem(padding-bottom, 80);
+  .event-all {
+    .item {
+      position: relative;
+      z-index: 1;
+    }
+    .event-info,.info {
+      @include pxRem(padding, 30);
+      ul {
+        display: flex;
+      }
+      h4 {
+        @include pxRem(padding-bottom, 15);
+      }
+      li {
+        @include pxRem(margin-right, 10);
+      }
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .vetical-all {
+    @include pxRem(padding-bottom, 20);
+    @include pxRem(padding-top, 20);
+    .vetical-item {
+      @include pxRem(padding-bottom, 20);
+      display: block;
+      .info {
+        @include pxRem(padding, 30);
+      }
+      ul {
+        display: flex;
+        li {
+          @include pxRem(margin-right, 10);
+        }
+      }
+      .item {
+        position: relative;
+        z-index: 1;
+      }
+      .img-vetical {
+        max-width: 100%;
+      }
+    }
+  }
+  .date {
+    @include pxRem(top, 15);
+    @include pxRem(right, 15);
+    @include pxRem(padding, 15);
+    position: absolute;
+    z-index: 1;
+    h4 {
+      @include pxRem(font-size, 14);
+      color: $secondary;
+      span {
+        @include pxRem(font-size, 40);
+        display: block;
+        font-weight: 900;
+      }
+    }
+    &::after {
+      background: $primary;
+      content: "";
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+      opacity: 0.7;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+}
+i {
+  @include pxRem(margin-right, 5);
+  font-weight: 500;
+}
+.meta {
+  @include pxRem(margin-bottom, 20);
+  @include pxRem(padding-bottom, 10);
+  border-bottom: 1px solid #e7e7e7;
+}
+.event-title {
+  color: $primary;
+  font-weight: 600;
+}
+.button-center {
+  text-align: center;
+}
+.img-event {
+  @include pxRem(height, 298);
+  background-position: center;
+  background-size: cover;
+}

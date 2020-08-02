@@ -1,0 +1,130 @@
+.footer {
+  @include pxRem(padding-top, 80);
+  color: $white;
+  .text-footer {
+    @include pxRem(margin-bottom, 15);
+  }
+  .text-italic {
+    font-style: italic;
+  }
+  a {
+    color: $white;
+  }
+}
+.footer-img {
+  @include pxRem(margin-bottom, 25);
+}
+.footer-title {
+  color: $white;
+}
+.form-control {
+  @include pxRem(padding, 6 12);
+  @include pxRem(height, 34);
+  @include pxRem(font-size, 14);
+  @include pxRem(min-height, 50);
+  @include pxRem(border-radius, 30);
+  line-height: 1.5;
+  width: 100%;
+  border: 1px solid #e7e7e7;
+  box-shadow: inherit;
+  color: $grey;
+  background: transparent;
+  &:focus {
+    outline: none;
+  }
+}
+.footer-form {
+  position: relative;
+}
+.footer-form {
+  @include pxRem(margin-top, 20);
+  .form-button {
+    @include pxRem(border-radius, 30);
+    @include pxRem(font-size, 20);
+    @include pxRem(min-height, 40);
+    @include pxRem(padding, 0 30);
+    @include pxRem(right, 5);
+    @include pxRem(top, 5);
+    background: $white;
+    border: medium none;
+    color: $secondary;
+    position: absolute;
+    z-index: 9;
+  }
+}
+.footer-list {
+  @include pxRem(margin-top, 20);
+  .footer-item {
+    list-style: inside;
+  }
+}
+.footer-contact {
+  p {
+    display: inline-block;
+  }
+  i {
+    @include pxRem(padding-top, 8);
+    @include pxRem(margin-right, 10);
+    @include pxRem(margin-bottom, 10);
+    @include pxRem(height, 40);
+    @include pxRem(width, 40);
+    @include pxRem(font-size, 20);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: $white;
+    text-align: center;
+  }
+}
+.openning-info {
+  @include pxRem(margin-top, 20);
+  @include pxRem(padding-top, 20);
+  border-top: 1px dashed rgba(255, 255, 255, 0.1);
+  color: $text-grey-secondary;
+}
+.contact-list {
+  li {
+    @include pxRem(margin-bottom, 10);
+    @include pxRem(padding-bottom, 10);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+  }
+}
+.footer-bottom {
+  @include pxRem(margin-top, 80);
+  @include pxRem(padding, 20 0);
+  background: $primary;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  .bottom-left {
+    p {
+      color: $white;
+      a {
+        text-transform: uppercase;
+        color: $secondary;
+      }
+    }
+  }
+  .bottom-right {
+    ul {
+      li {
+        display: inline-block;
+        text-transform: uppercase;
+        a {
+          @include pxRem(margin-left, 10);
+          @include pxRem(padding-left, 15);
+          @include pxRem(padding-top, 13);
+          position: relative;
+          color: $white;
+          &::before {
+            @include pxRem(height, 12);
+            @include pxRem(top, 15);
+            @include pxRem(width, 1);
+            background: $white;
+            content: “”;
+            left: 0;
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+}

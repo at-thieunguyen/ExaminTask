@@ -1,0 +1,62 @@
+<section class="popular-courses">
+  <div class="container">
+    <div class="row">
+      <div class="site-heading">
+        <div class="col-12">
+          <h2>Popular courses</h2>
+          <p>
+            Discourse assurance estimable applauded to so. Him everything melancholy uncommonly but solicitude
+            inhabiting projection off. Connection stimulated estimating excellence an to impression.
+          </p>
+        </div>
+      </div>
+    </div>
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)"
+      (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
+      <div class="popular-courses-item" ngxSlickItem *ngFor="let slide of slides">
+        <div class="row">
+          <div class="col-12">
+            <div class="popular-slide">
+              <div class="item">
+                <div class="thumb">
+                  <a href="#"><img class="popular-img" src="{{slide.img}}" alt=""></a>
+                  <div class="price">price : Free</div>
+                </div>
+                <div class="info">
+                  <div class="author-info">
+                    <div class="thumb">
+                      <a href=""><img src="{{slide.avt}}" alt=""></a>
+                    </div>
+                    <div class="orthers">
+                      <a href="#">{{slide.name}}</a>
+                      <div class="ratinng">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>4.9 (2,655)</span>
+                      </div>
+                    </div>
+                  </div>
+                  <h4><a href="#">{{slide.title}}</a></h4>
+                  <p>
+                    Would day nor ask walls known. But preserved advantage are but and certainty earnestly
+                    enjoyment.
+                  </p>
+                  <div class="bottom-info row">
+                    <ul>
+                      <li><i class="fas fa-user"></i>6,690 </li>
+                      <li><i class="fas fa-clock"></i> 16:00</li>
+                    </ul>
+                      <a class="btn-secondary btn-bd" href="">Enroll now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ngx-slick-carousel>
+  </div>
+</section>

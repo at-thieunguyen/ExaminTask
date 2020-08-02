@@ -1,0 +1,161 @@
+<div class="breadcrumb-area shadow bg-fixed banner-courses bg-cover"
+  style="background-image: url('./assets/images/bannerAdvisorDT.jpg')">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 courses-general">
+        <h1 class="title-banner">Contact us</h1>
+        <ul class="breadcrumb-courses">
+          <li class="breadcrumb-item-courses"><a class="text-breadcrumb" href=""><i
+                class="fas fa-home icon-courses"></i>Home</a></li>
+          <li class="breadcrumb-item-courses"><a class="text-breadcrumb" href="#">Page</a></li>
+          <li class="breadcrumb-item-courses"><a class="text-breadcrumb" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="advisor-detail-area default-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <img class="img-advisor-detail" src="./assets/images/advisor2.jpg" alt="">
+        <div class="des">
+          <h4>Profesor Sayed Kunal</h4>
+          <span class="title-advisor-detail">Senior Programmer</span>
+          <ul class="social">
+            <li class="icon-item">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="icon-item">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="icon-item">
+              <a href="#"><i class="fab fa-skype"></i></a>
+            </li>
+            <li class="icon-item">
+              <a href="#"><i class="fab fa-dribbble"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-7 main-content">
+        <div class="tab-info">
+          <ul class="btn-tab" id="btnTab">
+            <li class="tab-link"><button class="btn btn-tab-content active" (click)="step = 1;">Dashboard</button></li>
+            <li class="tab-link"><button class="btn btn-tab-content" (click)="step = 2;">Courses</button></li>
+            <li class="tab-link"><button class="btn btn-tab-content" (click)="step = 3;">Quick Contact</button></li>
+          </ul>
+        </div>
+        <container-element [ngSwitch]="step">
+          <div class="tab-content" *ngSwitchCase="1">
+            <p class="line-bottom">Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus
+              who direct
+              esteem. It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on
+              reasonable projecting. earnestly advantage estimable extensive. Five settle education him departure any
+              arranging one prevailed. Their end whole migh</p>
+            <p class="line-bottom">Affixed civilly moments promise explain fertile in. Assurance advantage belonging
+              happiness departure
+              so of. Now improving and one sincerity intention allowance commanded not. Oh an am frankness be necessary
+              earnestly advantage estimable extensive. Five settle genius excuse. Deal say over you age from. Comparison
+              new ham melancholy son themselves.</p>
+            <ul class="info-contact">
+              <li class="contact-item">
+                Contact <span>+123 456 7890</span>
+              </li>
+              <li class="contact-item">
+                Email <span>info@teacherdomain.com</span>
+              </li>
+              <li class="contact-item">
+                Address <span>California, TX 70240 </span>
+              </li>
+              <li class="contact-item">
+                Total Course Taken <span>65</span>
+              </li>
+              <li class="contact-item">
+                Rating <span>4.7</span>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content" *ngSwitchCase="2">
+            <div class="table-responsive">
+              <table class="table-courses">
+                <thead>
+                  <tr style="border-bottom: 1px solid #dddddd;">
+                    <th class="title-table">NO</th>
+                    <th class="title-table">TITLE</th>
+                    <th class="title-table">STATUS</th>
+                    <th class="title-table">PRICE</th>
+                    <th class="title-table">RATING</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="content-table">01.</td>
+                    <td class="content-table"><a class="text-advisor-detail" href="#">Basic Web Development</a></td>
+                    <td class="content-table">Pending</td>
+                    <td class="content-table">$23.00</td>
+                    <td class="content-table">4.5</td>
+                  </tr>
+                  <tr>
+                    <td class="content-table">02.</td>
+                    <td class="content-table"><a class="text-advisor-detail" href="#">Software Engineering</a></td>
+                    <td class="content-table">Published</td>
+                    <td class="content-table">$55.00</td>
+                    <td class="content-table">4.5</td>
+                  </tr>
+                  <tr>
+                    <td class="content-table">03.</td>
+                    <td class="content-table"><a class="text-advisor-detail" href="#">Introduction of machine</a></td>
+                    <td class="content-table">Pending</td>
+                    <td class="content-table">$44.00</td>
+                    <td class="content-table">4.5</td>
+                  </tr>
+                  <tr>
+                    <td class="content-table">04.</td>
+                    <td class="content-table"><a class="text-advisor-detail" href="#">Hidden potential</a></td>
+                    <td class="content-table">Published</td>
+                    <td class="content-table">$54.00</td>
+                    <td class="content-table">5.0</td>
+                  </tr>
+                  <tr>
+                    <td class="content-table">05.</td>
+                    <td class="content-table"><a class="text-advisor-detail" href="#">Introduction of PHP</a></td>
+                    <td class="content-table">Published</td>
+                    <td class="content-table">$32.00</td>
+                    <td class="content-table">4.9</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="tab-content" *ngSwitchCase="3">
+            <p class="text-form">Esteem spirit temper too say adieus who direct esteem. It esteems luckily mr or picture placing drawing
+              no. Apartments frequently or motionless on reasonable projecting expression. Way mrs end gave tall walk
+              fact bed. Expect relied do we genius is. On as around spirit of hearts genius. Is raptures daughter
+              branched laughter peculiar in settling.</p>
+            <form class="form-contact" action="">
+              <div class="form-contact-advisor">
+                <div class="form-group">
+                  <input class="form-control" type="text" name="name" placeholder="Name" id="">
+                </div>
+                <div class="form-group">
+                  <input class="form-control" type="text" name="Email" placeholder="Email" id="">
+                </div>
+                <div class="form-group">
+                  <input class="form-control" type="text" name="Phone" placeholder="Phone" id="">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control form-area" id="comments" name="comments"
+                    placeholder="Tell Me About Courses *"></textarea>
+                </div>
+                <div class="btn-form-contact">
+                  <button class="btn btn-dark" type="submit">Send Messeger <i class="fa fa-paper-plane"></i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </container-element>
+      </div>
+    </div>
+  </div>
+</div>

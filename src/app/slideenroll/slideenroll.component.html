@@ -1,0 +1,58 @@
+<div class="container">
+  <ngx-slick-carousel class="carousel" #slickModal="slick-carousel">
+    <section class="slide-enroll slide" ngxSlickItem *ngFor="let slide of slides">
+      <div class="slide slide-enroll-item">
+        <div class="row">
+          <div class="col-medium-12 col-smallest-12 col-large-5">
+            <div class="thumb">
+              <img class="img-enroll" src="{{slide.img}}" alt="">
+              <div class="live-view">
+                <a class="view-camera" href=""><i class="fa fa-camera"></i></a>
+                <a class="view-video" href=""><i class="fa fa-video"></i></a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-medium-12 col-smallest-12 col-large-7 info">
+            <h2><a href="#">{{slide.title}}</a></h2>
+            <h5>featured courses</h5>
+            <p>
+
+              Both rest of know draw fond post as. It agreement defective to excellent. Feebly do engage of narrow.
+              Extensive repulsive belonging depending if promotion be zealously as. Preference inquietude ask.
+
+            </p>
+            <h3>Learning outcomes</h3>
+            <ul>
+              <li><i class="fas fa-check-double"></i><span>Over 37 lectures and 55.5 hours of content!</span></li>
+              <li><i class="fas fa-check-double"></i><span>Testing Training Included.</span></li>
+              <li><i class="fas fa-check-double"></i><span>Course content designed by considering current software
+                  testing</span></li>
+              <li><i class="fas fa-check-double"></i><span>Practical assignments at the end of every session.</span>
+              </li>
+            </ul>
+            <a href="" class="btn btn-secondary btn-md">enroll now</a>
+            <div class="bottom-info">
+              <div class="item">
+                <h4>author</h4>
+                <a href="#">devid honey</a>
+              </div>
+              <div class="item">
+                <h4>students enrolled</h4>
+                <a href="#">5455</a>
+              </div>
+              <div class="item">
+                <h4>rating</h4>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </ngx-slick-carousel>
+</div>

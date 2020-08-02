@@ -1,0 +1,19 @@
+.notifi {
+  @include pxRem(padding, 15);
+  @include pxRem(border-radius, 5);
+  @include pxRem(margin-bottom, 20);
+}
+.far {
+  @include pxRem(margin-left, 10);
+}
+.notifi-alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+}
+.alert-messeger-danger {
+  color: $red;
+}
+.notifi-alert-success {
+  color: #155724;
+  background-color: #d4edda;
+}

@@ -1,0 +1,91 @@
+<div class="container">
+  <form action="#" id="register-form" class="form-popup" [formGroup]="formRegister">
+    <div class="notifi notifi-alert-success" *ngIf="success">Your account has been successfully registered<i
+        class="far fa-check-circle"></i></div>
+    <div class="row">
+      <div class="col-md-4 login-social">
+        <h4>Register with social</h4>
+        <ul class="social">
+          <li class="facebook mg-right">
+            <a class="icon-form" href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="twitter mg-right">
+            <a class="icon-form" href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="linkedin">
+            <a class="icon-form" href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-8 login-custom">
+        <h4>Register with social</h4>
+        <div class="form-register">
+          <div class="form-group">
+            <input class="form-control" placeholder="Email*" type="email" formControlName="email" required>
+          </div>
+          <div class="alert-messeger-danger" *ngIf="
+              formRegister.controls.email.invalid &&
+              (formRegister.controls.email.touched ||
+                formRegister.controls.email.dirty) || invalidE
+            ">
+            <p class="alert-messeger-danger" *ngIf="formRegister.controls.email?.errors.required">
+              Email is required!!!
+            </p>
+            <p class="alert-messeger-danger" *ngIf="formRegister.controls.email?.errors.email">
+              Invalid email!!!
+            </p>
+          </div>
+          <div class="form-group">
+            <input class="form-control" placeholder="Username*" type="text" formControlName="userName" required>
+          </div>
+          <div class="alert-messeger-danger" *ngIf="
+              formRegister.controls.userName.invalid &&
+              (formRegister.controls.userName.touched ||
+                formRegister.controls.userName.dirty)
+            ">
+            <p>
+              Username is required!!!
+            </p>
+          </div>
+          <div class="form-group">
+            <input class="form-control" placeholder="Password*" type="password" formControlName="passWord" required>
+          </div>
+          <div class="alert-messeger-danger"  *ngIf="
+              formRegister.controls.passWord.invalid &&
+              (formRegister.controls.passWord.touched ||
+                formRegister.controls.passWord.dirty)
+            ">
+            <p *ngIf="formRegister.controls.passWord?.errors.required">
+              Password is required!!!
+            </p>
+          </div>
+          <div class="form-group">
+            <input class="form-control" placeholder="Repeat Password*" type="password" formControlName="repeatPassword"
+              required>
+          </div>
+          <div class="alert-messeger-danger" *ngIf="
+              formRegister.controls.repeatPassword.invalid &&
+              (formRegister.controls.repeatPassword.touched ||
+                formRegister.controls.repeatPassword.dirty)
+            ">
+            <p class="alert-messeger-danger" *ngIf="formRegister.controls.repeatPassword?.errors.required">
+              ComfirmPassword is required!!!
+            </p>
+            <p class="alert-messeger-danger" *ngIf="formRegister.controls.repeatPassword?.errors.confirmedValidator">
+              Cofirm password doesn't match!
+            </p>
+          </div>
+          <button class="btn btn-secondary" [disabled]="formRegister.invalid"  (click)="onRegister()">sign up</button>
+          <p class="link-bottom">Are you a member? <a href="#">Login now</a></p>
+        </div>
+      </div>
+    </div>
+    <button title="Close (Esc)" type="button" class="closeForm" (click)="closeDialog()">×</button>
+  </form>
+</div>

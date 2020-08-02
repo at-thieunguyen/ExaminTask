@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  a {
+    text-decoration: none;
+    color: $primary;
+  }
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #002147;
+  line-height: 1.2;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0;
+  margin: 0;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+h1 {
+  font-size: 3.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+h6 {
+  font-size: 1rem;
+}

@@ -1,0 +1,99 @@
+.blog-area {
+  @include pxRem(padding-bottom, 80);
+  .thumb {
+    position: relative;
+    z-index: 1;
+    img {
+      width: 100%;
+    }
+    .date {
+      @include pxRem(bottom, 15);
+      @include pxRem(left, 15);
+      @include pxRem(padding, 15);
+      position: absolute;
+      z-index: 1;
+      h4 {
+        @include pxRem(font-size, 14);
+        color: $secondary;
+        span {
+          @include pxRem(font-size, 40);
+          display: block;
+          font-weight: 900;
+        }
+      }
+      &::after {
+        background: $primary;
+        content: "";
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        opacity: 0.7;
+        position: absolute;
+        z-index: -1;
+      }
+    }
+  }
+  .info {
+    @include pxRem(padding-top, 30);
+    h5 {
+      @include pxRem(font-weight, 600);
+      @include pxRem(margin-bottom, 15);
+      text-transform: capitalize;
+      .info-title {
+        color: $primary;
+      }
+    }
+    p {
+      @include pxRem(line-height, 26);
+      @include pxRem(margin, 0 0 15);
+      color: $grey;
+      text-transform: none;
+      font-weight: 400;
+    }
+    .text-read {
+      font-weight: 600;
+      text-transform: uppercase;
+      color: $grey;
+      &:hover {
+        color: $secondary;
+        transition: 0.5s;
+      }
+    }
+    .meta {
+      @include pxRem(margin-top, 15);
+      @include pxRem(padding-top, 15);
+      border-top: 1px solid #e7e7e7;
+      ul {
+        display: flex;
+        a {
+          color: $grey;
+        }
+        .user,
+        .comment {
+          &:hover {
+            color: $secondary;
+            transition: 0.5s;
+          }
+        }
+        li {
+          margin-right: 10px;
+          text-transform: uppercase;
+          cursor: pointer;
+          i {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+.client-area {
+  @include pxRem(padding-top, 80);
+  background-color: #f9f9f9;
+  .single-item {
+    img {
+      margin: auto;
+    }
+  }
+}
