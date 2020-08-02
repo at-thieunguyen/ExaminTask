@@ -28,9 +28,11 @@
           </div>
         </div>
         <div class="col-medium-4 user-login">
-          <a *ngIf="!isLogin" class="popup-with-form" (click)="showFormRegister()"><i class="fas fa-edit"></i>Register</a>
+          <a *ngIf="!isLogin" class="popup-with-form" (click)="showFormRegister()"><i
+              class="fas fa-edit"></i>Register</a>
           <a *ngIf="!isLogin" class="popup-with-form" (click)="showFormLogin()"><i class="fas fa-user"></i>Login</a>
-          <a routerLink="/" class="header-text" *ngIf="isLogin" (click)="logOut()"><i class="fas fa-sign-out-alt"></i>Log Out</a>
+          <a routerLink="/" class="header-text" *ngIf="isLogin" (click)="logOut()"><i
+              class="fas fa-sign-out-alt"></i>Log Out</a>
         </div>
       </div>
     </div>

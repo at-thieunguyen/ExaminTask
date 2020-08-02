@@ -1,7 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { ApiService } from '../api.service';
 import { AngularFireDatabase } from '@angular/fire/database';
 import { Observable } from 'rxjs';
 import { MatDialogRef, MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
@@ -28,7 +27,6 @@ export class FormRegisterComponent implements OnInit {
 
   constructor(private fb: FormBuilder,
     private router: Router,
-    private apiService: ApiService,
     public db: AngularFireDatabase,
     public dialogRef: MatDialogRef<FormRegisterComponent>,
     public dialog: MatDialog,
