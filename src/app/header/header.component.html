@@ -1,34 +1,36 @@
 <header>
-  <div class="top-navbar background-dark">
+  <div class="top-navbar background-dark" *ngIf="!isHome">
     <div class="container">
       <div class="row">
         <div class="col-medium-8">
           <div class="info-box">
             <ul class="box-contact">
-              <li class="box-contact-item">
+              <li *ngIf="!isLogin" class="box-contact-item">
                 <span class="text-contact">
                   <i class="fas fa-map"></i>Address
                 </span>
                 Califonia, TX 70240
               </li>
-              <li class="box-contact-item">
+              <li *ngIf="!isLogin" class="box-contact-item">
                 <span class="text-contact">
                   <i class="fas fa-envelope-open"></i>Email
                 </span>
                 info@gmail.com
               </li>
-              <li class="box-contact-item">
+              <li *ngIf="!isLogin" class="box-contact-item">
                 <span class="text-contact">
                   <i class="fas fa-phone"></i>Contact
                 </span>
                 +84905 888 584
               </li>
+              <p class="header-text" *ngIf="isLogin"><i class="fas fa-user"></i>Hello, {{curentEmail.userName}}</p>
             </ul>
           </div>
         </div>
         <div class="col-medium-4 user-login">
-          <a class="popup-with-form" (click)="showFormRegister()"><i class="fas fa-edit"></i>Register</a>
-          <a class="popup-with-form" (click)="showFormLogin()"><i class="fas fa-user"></i>Login</a>
+          <a *ngIf="!isLogin" class="popup-with-form" (click)="showFormRegister()"><i class="fas fa-edit"></i>Register</a>
+          <a *ngIf="!isLogin" class="popup-with-form" (click)="showFormLogin()"><i class="fas fa-user"></i>Login</a>
+          <a routerLink="/" class="header-text" *ngIf="isLogin" (click)="logOut()"><i class="fas fa-sign-out-alt"></i>Log Out</a>
         </div>
       </div>
     </div>

@@ -1,0 +1,14 @@
+.form-popup {
+    .check-remember {
+      @include pxRem(margin-bottom, 20);
+      display: flex;
+      justify-content: space-between;
+      .text-check-remember {
+        @include pxRem(margin-right, 5);
+      }
+    }
+    .link-bottom {
+      @include pxRem(margin-top, 20);
+    }
+  
+}

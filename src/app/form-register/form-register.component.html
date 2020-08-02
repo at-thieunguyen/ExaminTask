@@ -1,5 +1,7 @@
 <div class="container">
   <form action="#" id="register-form" class="form-popup" [formGroup]="formRegister">
+    <div class="notifi notifi-alert-success" *ngIf="success">Your account has been successfully registered<i
+        class="far fa-check-circle"></i></div>
     <div class="row">
       <div class="col-md-4 login-social">
         <h4>Register with social</h4>
@@ -27,19 +29,22 @@
           <div class="form-group">
             <input class="form-control" placeholder="Email*" type="email" formControlName="email" required>
           </div>
-          <div class="notifi-alert-danger" *ngIf="
+          <div class="alert-messeger-danger" *ngIf="
               formRegister.controls.email.invalid &&
               (formRegister.controls.email.touched ||
-                formRegister.controls.email.dirty)
+                formRegister.controls.email.dirty) || invalidE
             ">
-            <p>
+            <p class="alert-messeger-danger" *ngIf="formRegister.controls.email?.errors.required">
               Email is required!!!
+            </p>
+            <p class="alert-messeger-danger" *ngIf="formRegister.controls.email?.errors.email">
+              Invalid email!!!
             </p>
           </div>
           <div class="form-group">
             <input class="form-control" placeholder="Username*" type="text" formControlName="userName" required>
           </div>
-          <div class="notifi-alert-danger" *ngIf="
+          <div class="alert-messeger-danger" *ngIf="
               formRegister.controls.userName.invalid &&
               (formRegister.controls.userName.touched ||
                 formRegister.controls.userName.dirty)
@@ -51,12 +56,12 @@
           <div class="form-group">
             <input class="form-control" placeholder="Password*" type="password" formControlName="passWord" required>
           </div>
-          <div class="notifi-alert-danger" *ngIf="
+          <div class="alert-messeger-danger"  *ngIf="
               formRegister.controls.passWord.invalid &&
               (formRegister.controls.passWord.touched ||
                 formRegister.controls.passWord.dirty)
             ">
-            <p>
+            <p *ngIf="formRegister.controls.passWord?.errors.required">
               Password is required!!!
             </p>
           </div>
@@ -64,20 +69,23 @@
             <input class="form-control" placeholder="Repeat Password*" type="password" formControlName="repeatPassword"
               required>
           </div>
-          <div class="notifi-alert-danger" *ngIf="
+          <div class="alert-messeger-danger" *ngIf="
               formRegister.controls.repeatPassword.invalid &&
               (formRegister.controls.repeatPassword.touched ||
                 formRegister.controls.repeatPassword.dirty)
             ">
-            <p>
+            <p class="alert-messeger-danger" *ngIf="formRegister.controls.repeatPassword?.errors.required">
               ComfirmPassword is required!!!
             </p>
+            <p class="alert-messeger-danger" *ngIf="formRegister.controls.repeatPassword?.errors.confirmedValidator">
+              Cofirm password doesn't match!
+            </p>
           </div>
-          <button class="btn btn-secondary" (click)="onRegister()">sign up</button>
+          <button class="btn btn-secondary" [disabled]="formRegister.invalid"  (click)="onRegister()">sign up</button>
           <p class="link-bottom">Are you a member? <a href="#">Login now</a></p>
         </div>
       </div>
     </div>
-    <button title="Close (Esc)" type="button" class="closeForm">×</button>
+    <button title="Close (Esc)" type="button" class="closeForm" (click)="closeDialog()">×</button>
   </form>
 </div>
