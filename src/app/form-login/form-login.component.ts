@@ -19,6 +19,9 @@ export class FormLoginComponent implements OnInit {
   error: boolean = true;
   loginForm: FormGroup;
   loginSuccess: boolean = false;
+  isTrue = false;
+  currentUser: any;
+
   constructor(private fb: FormBuilder,
     public db: AngularFireDatabase,
     private loginService: LoginServiceService,
@@ -26,6 +29,8 @@ export class FormLoginComponent implements OnInit {
     @Inject(MAT_DIALOG_DATA) public data: any) {
     this.db.list('users').valueChanges().subscribe((data) => {
       this.dataUser = data;
+      console.log(data);
+
     })
   }
 
@@ -43,15 +48,23 @@ export class FormLoginComponent implements OnInit {
     for (let i = 0; i < this.dataUser.length; i++) {
       if (
         this.dataUser[i].email === this.loginForm.value.email &&
-        this.dataUser[i].passWord === this.loginForm.value.password) {
+        this.dataUser[i].password === this.loginForm.value.password) {
+        console.log('true');
         localStorage.setItem("userLogin", JSON.stringify(this.dataUser[i]));
         this.dialogRef.close('no');
         let status = true;
         this.loginService.changeStatus(status);
+        //changer current user
+        this.currentUser = localStorage.getItem('userLogin')
+        this.loginService.changeUser(this.currentUser)
+        console.log(this.currentUser);
+        break;
       } else {
-        this.error = false;
+        console.log('false');
+
       }
     }
+
   }
   closeDialog() {
     this.dialogRef.close('no')

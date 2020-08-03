@@ -78,7 +78,7 @@
               ComfirmPassword is required!!!
             </p>
             <p class="alert-messeger-danger" *ngIf="formRegister.controls.repeatPassword?.errors.confirmedValidator">
-              Cofirm password doesn't match!
+              Confirm password doesn't match!
             </p>
           </div>
           <button class="btn btn-secondary" [disabled]="formRegister.invalid"  (click)="onRegister()">sign up</button>

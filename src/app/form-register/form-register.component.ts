@@ -41,15 +41,17 @@ export class FormRegisterComponent implements OnInit {
       userName: ["", [Validators.required, Validators.minLength(2)]],
       passWord: ["", [Validators.required, Validators.minLength(6)]],
       repeatPassword: ["", [Validators.required, Validators.minLength(6)]],
-    }),
-    {
-      validators: this.matchPasswords
-    }
+    },
+      {
+        validators: this.matchPasswords
+      }
+    )
+
   }
   matchPasswords(group: FormGroup) {
     let password = group.get('passWord').value;
-    let repeatPassword = group.get('repeatPassword').value;
-    return password === repeatPassword ? null : { notSame: true }
+    let confirmPassword = group.get('repeatPassword').value;
+    return password === confirmPassword ? null : { notSame: true }
   }
   onRegister() {
     this.user = {
