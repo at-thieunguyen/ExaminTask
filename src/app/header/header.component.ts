@@ -43,10 +43,7 @@ export class HeaderComponent implements OnInit {
     // subscribe change email when login      
     this.loginservice.currentName.subscribe(data => {
       this.login = data;
-      console.log(this.login);
-      
       this.curentEmail = JSON.parse(localStorage.getItem('userLogin'));
-      console.log(this.curentEmail);
       
       
     })

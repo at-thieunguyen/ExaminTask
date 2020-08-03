@@ -17,4 +17,7 @@
   h6 {
     font-size: 1rem;
   }
+  p {
+    @include pxRem(margin, 8 0 0);
+  }
 }

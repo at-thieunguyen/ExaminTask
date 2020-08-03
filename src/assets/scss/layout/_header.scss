@@ -203,6 +203,6 @@
   @include pxRem(padding, 25);
 }
 .header-text {
-  @include pxRem(margin-top, 10);
+  @include pxRem(margin-top, 8);
   color: $white;
 }

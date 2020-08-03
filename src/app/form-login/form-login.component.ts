@@ -29,7 +29,6 @@ export class FormLoginComponent implements OnInit {
     @Inject(MAT_DIALOG_DATA) public data: any) {
     this.db.list('users').valueChanges().subscribe((data) => {
       this.dataUser = data;
-      console.log(data);
 
     })
   }
@@ -49,7 +48,6 @@ export class FormLoginComponent implements OnInit {
       if (
         this.dataUser[i].email === this.loginForm.value.email &&
         this.dataUser[i].password === this.loginForm.value.password) {
-        console.log('true');
         localStorage.setItem("userLogin", JSON.stringify(this.dataUser[i]));
         this.dialogRef.close('no');
         let status = true;
@@ -57,11 +55,9 @@ export class FormLoginComponent implements OnInit {
         //changer current user
         this.currentUser = localStorage.getItem('userLogin')
         this.loginService.changeUser(this.currentUser)
-        console.log(this.currentUser);
         break;
       } else {
-        console.log('false');
-
+          this.error = false;
       }
     }
 
